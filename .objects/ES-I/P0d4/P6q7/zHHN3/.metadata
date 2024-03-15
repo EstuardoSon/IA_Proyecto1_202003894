@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Usuario",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "zHHN39qxDUWEJ5paLYQ9Aw",
+  "Reference": "6jWH5XjTdUi-jNNzcz7_Ug/zHHN39qxDUWEJ5paLYQ9Aw",
+  "ParentRef": "6jWH5XjTdUi-jNNzcz7_Ug/P6q7T56tqk6QwSKOKGkUQw",
+  "Created": "2024-03-14T22:50:00.0727267Z",
+  "Updated": "2024-03-14T22:50:00.0727267Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="T3ITIuHQzUKOwlJaE-uu_g" Reference="6jWH5XjTdUi-jNNzcz7_Ug/p1wwjBuhQkyPGwJ8ymezyg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.zoho.com/desk/lp/logout.html" CvTextArea="1732, 172, 46, 12" CvTextArgument="SIGN IN" CvType="Text" DesignTimeRectangle="1719, 160, 74, 39" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Clic 'SIGN IN''" FullSelectorArgument="&lt;webctrl class='zgh-login' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl class='zgh-login' tag='A' type='' aaname='SIGN IN' check:innerText='SIGN IN' /&gt;" Guid="73044393-3f62-4017-b320-108c966d2382" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Help Desk Software with Robust Features | Zoho Desk Logout' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="4e0e627ac71329806aac5f3a769557f0.png" xmlns="">0uqSMcqYkOUqB8vuBM_RB6w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

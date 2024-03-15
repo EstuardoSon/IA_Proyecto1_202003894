@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Datos Archivo",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "_XcsruzUR0CrbwpUaAVQyA",
+  "Reference": "6jWH5XjTdUi-jNNzcz7_Ug/_XcsruzUR0CrbwpUaAVQyA",
+  "ParentRef": "6jWH5XjTdUi-jNNzcz7_Ug/iiJbl-R3q0yQf8DM-TVgsQ",
+  "Created": "2024-03-14T01:26:09.6887131Z",
+  "Updated": "2024-03-14T05:21:57.860814Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

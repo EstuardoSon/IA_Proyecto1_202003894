@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="i4Vdr3GlBESE3qJceEQH3g" Reference="6jWH5XjTdUi-jNNzcz7_Ug/cxvwXiGefkisoqd0bGWHBg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://accounts.zoho.com/signin?servicename=ZohoSupport&amp;signupurl=https://www.zoho.com/desk/signup.html&amp;serviceurl=https%3A%2F%2Fdesk.zoho.com%3Fref_value%3Ddirect%253Adesk%257Cdirect%253Adesk%257Cdirect%253Adesk%252Chttps%253A%252F%252Fwww.zoho.com%252Fdesk%252Flp%252Flogout.html%252C%252CDesktop%252Chttps%253A%252F%252Fwww.zoho.com%252Fdesk%252Flp%252Flogout.html" CvTextArea="587, 489, 164, 15" CvTextArgument="Escriba la contrasena" CvType="Text" DesignTimeRectangle="573, 527, 398, 44" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FriendlyName="'Escribir en 'INPUT password''" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='textbox' aaname='' /&gt;" Guid="fabd4f4f-72c5-4409-a8cf-cb524487fadf" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Zoho Accounts' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="1ee21eb1962b77d7eeedd7eccc3ec70b.png" xmlns="">0K8Br18GZ70-9ex9QPXiaUQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

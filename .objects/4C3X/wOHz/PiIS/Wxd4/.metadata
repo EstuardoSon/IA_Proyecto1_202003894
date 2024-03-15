@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Clic 'IMG'",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "Wxd4Bl16dkiIn1Jf26rJEA",
+  "Reference": "6jWH5XjTdUi-jNNzcz7_Ug/Wxd4Bl16dkiIn1Jf26rJEA",
+  "ParentRef": "6jWH5XjTdUi-jNNzcz7_Ug/PiISpLd8pE2ImjRwsngFjA",
+  "Created": "2024-03-14T03:21:28.0060093Z",
+  "Updated": "2024-03-14T03:21:28.0060093Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

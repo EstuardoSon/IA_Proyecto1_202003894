@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Clic 'Clic 'Iniciar sesión''",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "J6SncWFV3kqxbi7mahjXDw",
+  "Reference": "6jWH5XjTdUi-jNNzcz7_Ug/J6SncWFV3kqxbi7mahjXDw",
+  "ParentRef": "6jWH5XjTdUi-jNNzcz7_Ug/afL8Th1lNU-7C9KwmEGLuw",
+  "Created": "2024-03-13T23:45:39.9156944Z",
+  "Updated": "2024-03-13T23:45:39.9156944Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="nGB6WzOHp0CJvHrYtW6FQg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.zoho.com/desk/lp/logout.html" CvTextArea="1688, 206, 115, 13" CvTextArgument="Access Zoho Desk" CvType="Text" DesignTimeRectangle="1688, 206, 115, 13" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Access zoho desk'" FullSelectorArgument="&lt;webctrl aaname='Access zoho desk' tag='A' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;webctrl aaname='Access zoho desk' tag='A' type='' class='' check:innerText='Access Zoho Desk' /&gt;" Guid="6486eaae-6b91-433c-b97c-01fa013247f1" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Help Desk Software with Robust Features | Zoho Desk Logout' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="b2323cd78ce0326dc4eaba5024c3dc3c.png" xmlns="">0i3IcGI0-v0OyBf5eIy-j2g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="rgm-0ol7Fk2G0FnX2hRbRw" Reference="6jWH5XjTdUi-jNNzcz7_Ug/Wj9tQ7mHC028hqSdeSJBZw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="78, 245, 1850, 775" DesignTimeScaleFactor="1" FriendlyName="'Para cada elemento de interfaz de usuario'" FullSelectorArgument="&lt;webctrl aria-role='list' tag='DIV' /&gt;" Guid="e1a3285e-670c-4f9f-86f6-b57b519818a3" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(4) usac' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="8e91eb00072bf0352fa9c639168d87fb.png" xmlns="">0vxpqVycmOEajktYuKIA1lg</imageRef>
+    </TargetAnchorable>
+    <p:InArgument x:TypeArguments="x:String" x:Key="ExtractDataSettings" xml:space="preserve">&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;
+	&lt;Column xsi:type='DataColumn' Name='Tickets' ReferenceName='Column0'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+&lt;/Table&gt;</p:InArgument>
+    <x:Null x:Key="NextLinkTarget" />
+    <x:String x:Key="ActivityType">ForEachUiElement</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

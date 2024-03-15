@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-gD5aig1JUugM16LreZOzw" Reference="6jWH5XjTdUi-jNNzcz7_Ug/yD9QFrAplUGOZgv68IM06A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://accounts.zoho.com/signin?servicename=ZohoSupport&amp;signupurl=https://www.zoho.com/desk/signup.html&amp;serviceurl=https%3A%2F%2Fdesk.zoho.com%3Fref_value%3Ddirect%253Adesk%257Cdirect%253Adesk%257Cdirect%253Adesk%252Chttps%253A%252F%252Fwww.zoho.com%252Fdesk%252Flp%252Flogout.html%252C%252CDesktop%252Chttps%253A%252F%252Fwww.zoho.com%252Fdesk%252Flp%252Flogout.html" CvElementArea="571, 481, 401, 48" CvType="InputBox" DesignTimeRectangle="573, 483, 398, 44" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Escribir en 'INPUT login_id''" FullSelectorArgument="&lt;webctrl id='login_id' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='login_id' tag='INPUT' type='text' class='textbox uvtextindent0' aaname='' /&gt;" Guid="269b820b-681e-470d-b5b9-c140d2d5a7a6" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Zoho Accounts' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="45dc1d4c76ad28ab7a11f8a44616dbc8.png" xmlns="">09Kbvf1GknEa9osdXJAARSQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

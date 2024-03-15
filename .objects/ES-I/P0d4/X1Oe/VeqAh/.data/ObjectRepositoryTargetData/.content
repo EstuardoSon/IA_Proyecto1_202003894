@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="DJhrXAS-N0u-SVs0wTk6bA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CvElementArea="1087, 348, 90, 49" CvTextArea="1108, 366, 50, 16" CvTextArgument="Aceptar" CvType="Button" DesignTimeRectangle="1094, 354, 78, 38" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Aceptar'" FullSelectorArgument="&lt;ctrl name='Cambia la contraseña' role='dialog' /&gt;&lt;ctrl name='Aceptar' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Cambia la contraseña' role='dialog' /&gt;&lt;ctrl name='Aceptar' role='push button' automationid='' check:fulltext='Aceptar' /&gt;" Guid="e2fe6c98-0a21-4c2d-9d45-4313b687f5ee" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='OrangeHRM - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="98e55403cb60f22fe5bb39f5d04c5911.png" xmlns="">0eES8mU0wNE-6aBMmohli2A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

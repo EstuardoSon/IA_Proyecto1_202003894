@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="xx9Mm-cS10KAtDxICKECcA" Reference="6jWH5XjTdUi-jNNzcz7_Ug/TGalAU4axEC24pdJx4Pr9g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://accounts.zoho.com/signin?servicename=ZohoSupport&amp;signupurl=https://www.zoho.com/desk/signup.html&amp;serviceurl=https%3A%2F%2Fdesk.zoho.com%3Fref_value%3Ddirect%253Adesk%257Cdirect%253Adesk%257Cdirect%253Adesk%252Chttps%253A%252F%252Fwww.zoho.com%252Fdesk%252Flp%252Flogout.html%252C%252CDesktop%252Chttps%253A%252F%252Fwww.zoho.com%252Fdesk%252Flp%252Flogout.html" CvElementArea="571, 639, 400, 47" CvTextArea="724, 655, 95, 14" CvTextArgument="Iniciar sesion" CvType="Button" DesignTimeRectangle="573, 641, 398, 44" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Clic 'Iniciar sesión''" FullSelectorArgument="&lt;webctrl id='nextbtn' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='nextbtn' tag='BUTTON' type='' class='btn blue' aaname='Iniciar sesión' check:innerText='Iniciar sesión' /&gt;" Guid="068c35d1-f26e-4374-9a29-5bc2ef4dc02a" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Zoho Accounts' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CvElementArea="571, 639, 400, 47" CvTextArea="724, 655, 95, 14" CvTextArgument="Iniciar sesion" CvType="Button" DesignTimeRectangle="725, 655, 94, 16" ElementType="Text" FriendlyName="'Clic 'Iniciar sesión''" FullSelectorArgument="&lt;webctrl parentid='nextbtn' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='nextbtn' tag='SPAN' type='' class='' aaname='Iniciar sesión' check:innerText='Iniciar sesión' /&gt;" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0bdd9514e961b1a3d6e292952c6bbe36.png" xmlns="">0vRJ4o96pnEOIf_IzgVQbdA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

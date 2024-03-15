@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Zoho Home",
+  "Type": "Screen",
+  "TaxonomyType": "Screen",
+  "Id": "mhWC2eNqHkSwfAd56ebhJQ",
+  "Reference": "6jWH5XjTdUi-jNNzcz7_Ug/mhWC2eNqHkSwfAd56ebhJQ",
+  "ParentRef": "6jWH5XjTdUi-jNNzcz7_Ug/wOHzwlf5xkei2kN2227pGQ",
+  "Created": "2024-03-13T23:43:59.0391826Z",
+  "Updated": "2024-03-14T01:24:09.6534139Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="jCpAIuMsGkWFSvPdi3M0bQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index" CvTextArea="68, 303, 25, 13" CvTextArgument="PIM" CvType="Text" DesignTimeRectangle="8, 291, 246, 38" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'PIM'" FullSelectorArgument="&lt;webctrl aaname='PIM' class='oxd-main-menu-item' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='PIM' class='oxd-main-menu-item' tag='A' type='' check:innerText='PIM' /&gt;" Guid="8c3e2287-0933-48a2-b968-99f9619c92d3" ScopeSelectorArgument="&lt;html app='chrome.exe' title='OrangeHRM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f1c12357c077525f32da80780bf26793.png" xmlns="">0qpyNeDAJJkKl8yd4Dv9oWw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

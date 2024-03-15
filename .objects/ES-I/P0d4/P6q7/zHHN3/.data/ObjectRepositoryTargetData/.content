@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="hRrp5OlvRE25vnvVjlSaiQ" Reference="6jWH5XjTdUi-jNNzcz7_Ug/zHHN39qxDUWEJ5paLYQ9Aw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login" CvElementArea="318, 446, 470, 100" CvType="InputBox" DesignTimeRectangle="559, 475, 435, 22" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Username : Admin'" FullSelectorArgument="&lt;webctrl tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='oxd-text oxd-text--p' aaname='Username : *' check:innerText='Username : *' /&gt;" Guid="544a237c-86b6-4ee9-97a5-feead94be42f" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='OrangeHRM' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CvElementArea="318, 446, 470, 100" CvType="InputBox" DesignTimeRectangle="534, 450, 485, 94" FriendlyName="'Username :'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='app' tag='DIV' class='oxd-sheet oxd-sheet--rounded oxd-sheet--gutters oxd-sheet--gray-lighten-2 orangehrm-demo-credentials' aaname='' /&gt;" ImageBase64="" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="230389b20013feaf216d2f8acf23580d.png" xmlns="">0RoCbvs2ObkKh0ZWVdWw2lw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

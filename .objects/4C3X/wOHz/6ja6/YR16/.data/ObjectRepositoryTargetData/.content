@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="UUXWtjYt0E2ztrO1ApuW_A" Reference="6jWH5XjTdUi-jNNzcz7_Ug/rEhDzOqpUUOVLab1lUhifQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://accounts.zoho.com/signin?servicename=ZohoSupport&amp;signupurl=https://www.zoho.com/desk/signup.html&amp;serviceurl=https%3A%2F%2Fdesk.zoho.com%3Fref_value%3Ddirect%253Adesk%257Cdirect%253Adesk%257Cdirect%253Adesk%252Chttps%253A%252F%252Fwww.zoho.com%252Fdesk%252Flp%252Flogout.html%252C%252CDesktop%252Chttps%253A%252F%252Fwww.zoho.com%252Fdesk%252Flp%252Flogout.html" CvElementArea="571, 549, 400, 48" CvTextArea="736, 565, 71, 17" CvTextArgument="Siguiente" CvType="Button" DesignTimeRectangle="573, 551, 398, 44" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Clic 'Siguiente''" FullSelectorArgument="&lt;webctrl id='nextbtn' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='nextbtn' tag='BUTTON' type='' class='btn blue' aaname='Siguiente' check:innerText='Siguiente' /&gt;" Guid="5ebd27ea-d8a8-4f76-a686-6ccfc7cef7aa" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Zoho Accounts' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CvElementArea="571, 549, 400, 48" CvTextArea="736, 565, 71, 17" CvTextArgument="Siguiente" CvType="Button" DesignTimeRectangle="738, 565, 68, 16" ElementType="Text" FriendlyName="'Clic 'Siguiente''" FullSelectorArgument="&lt;webctrl parentid='nextbtn' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='nextbtn' tag='SPAN' type='' class='' aaname='Siguiente' check:innerText='Siguiente' /&gt;" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b2320cd924c820cf9697f83cb027764b.png" xmlns="">0yXQQLe3LxUSSpihCe2-rvQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

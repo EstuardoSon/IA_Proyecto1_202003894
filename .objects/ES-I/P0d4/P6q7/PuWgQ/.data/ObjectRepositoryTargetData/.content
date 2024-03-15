@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="EMFVn2DFsEenSrWqB0HzBA" Reference="6jWH5XjTdUi-jNNzcz7_Ug/PuWgQRIJbEKXSEV9QDfMsQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login" CvElementArea="531, 447, 489, 100" CvType="InputBox" DesignTimeRectangle="559, 497, 435, 22" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Password : admin123'" FullSelectorArgument="&lt;webctrl idx='2' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='oxd-text oxd-text--p' check:text='Password : *' /&gt;" Guid="8f60f1bf-480a-49cc-8821-2c8a293c5a74" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='OrangeHRM' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CvElementArea="531, 447, 489, 100" CvType="InputBox" DesignTimeRectangle="534, 450, 485, 94" FriendlyName="'Username :'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='app' tag='DIV' class='oxd-sheet oxd-sheet--rounded oxd-sheet--gutters oxd-sheet--gray-lighten-2 orangehrm-demo-credentials' aaname='' /&gt;" ImageBase64="" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ce28fba984d53f864c3569c8ee4807d2.png" xmlns="">0jw8et5lWEU-WwUewxFMC1w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

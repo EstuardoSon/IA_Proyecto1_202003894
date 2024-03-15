@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="bI2YDe9XTEqbTaPTtpn5MQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CvElementArea="211, 95, 68, 23" CvTextArea="239, 100, 12, 12" CvTextArgument="Si" CvType="Button" DesignTimeRectangle="211, 95, 68, 23" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'&amp;Sí'" FullSelectorArgument="&lt;wnd aaname='Confirmar Guardar como' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Sí' cls='Button' title='&amp;amp;Sí' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Confirmar Guardar como' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Sí' cls='Button' title='&amp;amp;Sí' check:text='&amp;amp;Sí' /&gt;" Guid="38f632cb-fbe7-4212-b5f9-d76e71bc2f76" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Confirmar Guardar como' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="1004ab4cae9c6f2340490e409c7e0579.png" xmlns="">0lH5gLEBHzEKY7Ey2Icc5JQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

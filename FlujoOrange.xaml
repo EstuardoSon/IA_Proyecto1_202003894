@@ -1,0 +1,555 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="FlujoOrange" this:FlujoOrange.dirArchivo="C:\Users\sonmu\Downloads\testing.xlsx" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="dirArchivo" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1053,2666</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>FlujoOrange_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="FlujoOrange" sap:VirtualizedContainerService.HintSize="930,2601" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="usuario" />
+      <Variable x:TypeArguments="x:String" Name="password" />
+      <Variable x:TypeArguments="sd:DataTable" Name="filasExcel" />
+      <Variable x:TypeArguments="x:String" Name="carpetaCapturas">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">Capturas\</Literal>
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <TryCatch DisplayName="Intentar capturar" sap:VirtualizedContainerService.HintSize="868,25" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <TryCatch.Try>
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="OrangeHRM Login" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="6435d8be-20ab-4fd4-b660-2595da7c8399" Version="V2">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:String" Name="datosUsuario" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NGetText DisplayName="Obtener texto 'Usuario'" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="6435d8be-20ab-4fd4-b660-2595da7c8399" TextString="[usuario]" Version="V3">
+                  <uix:NGetText.Target>
+                    <uix:TargetAnchorable BrowserURL="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login" ContentHash="hRrp5OlvRE25vnvVjlSaiQ" CvElementArea="318, 446, 470, 100" CvType="InputBox" DesignTimeRectangle="559, 475, 435, 22" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Usuario'" FullSelectorArgument="&lt;webctrl tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='oxd-text oxd-text--p' aaname='Username : *' check:innerText='Username : *' /&gt;" Guid="544a237c-86b6-4ee9-97a5-feead94be42f" ImageBase64="" InformativeScreenshot="230389b20013feaf216d2f8acf23580d.png" Reference="6jWH5XjTdUi-jNNzcz7_Ug/zHHN39qxDUWEJ5paLYQ9Aw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='OrangeHRM' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CvElementArea="318, 446, 470, 100" CvType="InputBox" DesignTimeRectangle="534, 450, 485, 94" FriendlyName="'Usuario'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='app' tag='DIV' class='oxd-sheet oxd-sheet--rounded oxd-sheet--gutters oxd-sheet--gray-lighten-2 orangehrm-demo-credentials' aaname='' /&gt;" ImageBase64="" SearchSteps="FuzzySelector" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NGetText.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NGetText>
+                <uix:NGetText DisplayName="Obtener texto 'Username :'" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="6435d8be-20ab-4fd4-b660-2595da7c8399" TextString="[password]" Version="V3">
+                  <uix:NGetText.Target>
+                    <uix:TargetAnchorable BrowserURL="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login" ContentHash="EMFVn2DFsEenSrWqB0HzBA" CvElementArea="531, 447, 489, 100" CvType="InputBox" DesignTimeRectangle="559, 497, 435, 22" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Password'" FullSelectorArgument="&lt;webctrl idx='2' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='P' class='oxd-text oxd-text--p' check:text='Password : *' /&gt;" Guid="8f60f1bf-480a-49cc-8821-2c8a293c5a74" ImageBase64="" InformativeScreenshot="ce28fba984d53f864c3569c8ee4807d2.png" Reference="6jWH5XjTdUi-jNNzcz7_Ug/PuWgQRIJbEKXSEV9QDfMsQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='OrangeHRM' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CvElementArea="531, 447, 489, 100" CvType="InputBox" DesignTimeRectangle="534, 450, 485, 94" FriendlyName="'Password'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='app' tag='DIV' class='oxd-sheet oxd-sheet--rounded oxd-sheet--gutters oxd-sheet--gray-lighten-2 orangehrm-demo-credentials' aaname='' /&gt;" ImageBase64="" SearchSteps="FuzzySelector" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NGetText.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NGetText>
+                <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[usuario]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">[usuario.Split(":")(1).Trim]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[password]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">[password.Split(":")(1).Trim]</InArgument>
+                  </Assign.Value>
+                </Assign>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'Username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="6435d8be-20ab-4fd4-b660-2595da7c8399" Text="[usuario]" Version="V3">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login" ContentHash="6slbVdhTN0WitsHTttlrBQ" CvElementArea="531, 583, 490, 48" CvType="InputBox" DesignTimeRectangle="534, 585, 485, 45" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Escribir en 'Username''" FullSelectorArgument="&lt;webctrl name='username' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl name='username' tag='INPUT' type='' class='oxd-input oxd-input--focus' aaname='' /&gt;" Guid="55ec44ad-efa3-47d6-8a90-c4e1973a304a" InformativeScreenshot="dbe2e7eed3e7cee9a4fa0cd7c93b90c0.png" IsResponsive="True" Reference="6jWH5XjTdUi-jNNzcz7_Ug/vq_hLjD0xUuq7lwBcf4ceA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='OrangeHRM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CvTextArea="552, 564, 57, 11" CvTextArgument="Username" CvType="Text" DesignTimeRectangle="554, 562, 55, 16" ElementType="Text" FriendlyName="'Escribir en 'Username''" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='oxd-label' aaname='Username' check:innerText='Username' /&gt;" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NTypeInto>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="6435d8be-20ab-4fd4-b660-2595da7c8399" Text="[password]" Version="V3">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login" ContentHash="_3e-RuYjiEey4GU0HQ-VAQ" CvElementArea="531, 668, 489, 49" CvType="InputBox" DesignTimeRectangle="534, 670, 485, 45" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FriendlyName="'Escribir en 'Password''" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' class='oxd-input oxd-input--active' aaname='' /&gt;" Guid="bb41743f-574d-4aea-85ac-6260ac748249" InformativeScreenshot="54ca33c3cf28f48d42b94b423c5640bf.png" Reference="6jWH5XjTdUi-jNNzcz7_Ug/iOZ9Fcw-b0qcaLyflv10Uw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='OrangeHRM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CvTextArea="552, 650, 56, 11" CvTextArgument="Password" CvType="Text" DesignTimeRectangle="554, 648, 54, 16" ElementType="Text" FriendlyName="'Escribir en 'Password''" FullSelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' type='' class='oxd-label' check:innerText='Password' /&gt;" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NTypeInto>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic Boton Login" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6435d8be-20ab-4fd4-b660-2595da7c8399" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login" ContentHash="Fq7i23sfx0OCE25RPk6Slw" CvElementArea="532, 745, 488, 49" CvTextArea="757, 762, 37, 16" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="534, 747, 485, 46" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Clic 'Login''" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='oxd-button oxd-button--medium oxd-button--main orangehrm-login-button' aaname=' Login ' check:innerText='Login' /&gt;" Guid="cba4966a-02f8-422c-9861-94fbeeaca41b" InformativeScreenshot="9fdee536d398455b66cb2a1d1696460f.png" Reference="6jWH5XjTdUi-jNNzcz7_Ug/N1IbsX6BUEeuvwTLADvBgA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='OrangeHRM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                  </uix:NClick.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NClick>
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="MFfhvVjlY0a-QVqzzFovcw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGAUExURf///v759eh8Hv77+Prl0/fRsORpAOd5GP/+/f748/3+/fG1f/K0f+yZUOqMPORlAPjZved6GU2xdeZwCQCKL/738TCmYud1Ev328P3y6azbwPCrbvjVtu6fW/779/72777jzd6qbf327yCcUv307edzEOmEK+mAJP7fyZHQrvHu4cTl0v3z6/K2gvO6iPzw5v/8+fz+/fGudPzl0vK5hvzs3uZxC++kY+d5Gfzt4eRnAORoAE6ydxCXR/CoafjWuf77+eRmAPCpbO6iYfzv5Mnm1SeeVN/y6Od+IWS6hO6dViWkX++lY53YuyedU/CmaO6fWv748uNoAPv9+/rjz++jX/bNqfTEmff8+fzu4fXHoPnexgCILvrizeZyDTSmY/jYvOZwCla0fPCqbffTs7Pexe2aUf///////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOlg/doAAABpdFJOU///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AKA3ZhoAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC3SURBVChTY8iAg/QMQyAJFwiW8hRS1kYSSBKJt/UD0jABVzdNsRgFIAMqkJ6RauPtmw4TkA/JSNdS9AExwQL2TGmhGaIZxl7+zGABlkQZIBGWkcERIA0W4HUGGgEGLhaRQAFG8SgINyNDjj0FpILJHKIASMYlgAT02FghetKTzcBmqHgIh2ekp2cE8gQZpYMEMmLZrdScdO3U+fmAHJBAhqWsqrUjmyA3SCdYICNDXyAjGsTNyAAAT09UkZxCysoAAAAASUVORK5CYII=" InformativeScreenshot="2205f2597e4ec79a7fe626ecae026318.jpg" Reference="6jWH5XjTdUi-jNNzcz7_Ug/P6q7T56tqk6QwSKOKGkUQw" Selector="&lt;html app='chrome.exe' title='OrangeHRM' /&gt;" Title="OrangeHRM" Url="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login" />
+          </uix:NApplicationCard.TargetApp>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </uix:NApplicationCard>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,104" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+    <Delay DisplayName="Retraso" Duration="00:00:05" sap:VirtualizedContainerService.HintSize="868,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="OrangeHRM" sap:VirtualizedContainerService.HintSize="914,2268" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="060a2e04-f321-4bb1-8a5b-970912188f02" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="880,2051" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <TryCatch DisplayName="Intentar capturar" sap:VirtualizedContainerService.HintSize="818,25" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <TryCatch.Try>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Boton Aceptar'" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="060a2e04-f321-4bb1-8a5b-970912188f02" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable ContentHash="DJhrXAS-N0u-SVs0wTk6bA" CvElementArea="1087, 348, 90, 49" CvTextArea="1108, 366, 50, 16" CvTextArgument="Aceptar" CvType="Button" DesignTimeRectangle="1094, 354, 78, 38" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Boton Aceptar'" FullSelectorArgument="&lt;ctrl name='Cambia la contraseña' role='dialog' /&gt;&lt;ctrl name='Aceptar' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Cambia la contraseña' role='dialog' /&gt;&lt;ctrl name='Aceptar' role='push button' automationid='' check:fulltext='Aceptar' /&gt;" Guid="e2fe6c98-0a21-4c2d-9d45-4313b687f5ee" InformativeScreenshot="98e55403cb60f22fe5bb39f5d04c5911.png" Reference="6jWH5XjTdUi-jNNzcz7_Ug/VeqAh8NJTUyPirkiaDQPuA" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='OrangeHRM - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete" />
+                  </uix:NClick.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NClick>
+              </TryCatch.Try>
+              <TryCatch.Catches>
+                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ActivityAction x:TypeArguments="s:Exception">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                    </ActivityAction.Argument>
+                  </ActivityAction>
+                </Catch>
+              </TryCatch.Catches>
+            </TryCatch>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Clic 'PIM''" sap:VirtualizedContainerService.HintSize="818,25" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="060a2e04-f321-4bb1-8a5b-970912188f02" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index" ContentHash="jCpAIuMsGkWFSvPdi3M0bQ" CvTextArea="68, 303, 25, 13" CvTextArgument="PIM" CvType="Text" DesignTimeRectangle="8, 291, 246, 38" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Clic 'PIM''" FullSelectorArgument="&lt;webctrl aaname='PIM' class='oxd-main-menu-item' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='PIM' class='oxd-main-menu-item' tag='A' type='' check:innerText='PIM' /&gt;" Guid="8c3e2287-0933-48a2-b968-99f9619c92d3" InformativeScreenshot="f1c12357c077525f32da80780bf26793.png" Reference="6jWH5XjTdUi-jNNzcz7_Ug/81KmvKzUHECRgVAgl_6_tg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='OrangeHRM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="OrangeHRM PIM" sap:VirtualizedContainerService.HintSize="818,1525" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="d968b7f4-3481-4782-bca0-65d421af3603" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="784,1308" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Alcance del proceso de Excel" sap:VirtualizedContainerService.HintSize="722,1193" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+                      <ueab:ExcelProcessScopeX.Body>
+                        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="688,1106" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Utilice el archivo de Excel" sap:VirtualizedContainerService.HintSize="626,995" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="[dirArchivo]">
+                              <ueab:ExcelApplicationCard.Body>
+                                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="592,726" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ueab:ExcelForEachRowX DisplayName="Para cada fila de Excel" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="530,615" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_2" Range="[Excel.Sheet(&quot;Hoja1&quot;)]" SaveAfterEachRow="True">
+                                      <ueab:ExcelForEachRowX.Body>
+                                        <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                                          <ActivityAction.Argument1>
+                                            <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                                          </ActivityAction.Argument1>
+                                          <ActivityAction.Argument2>
+                                            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                                          </ActivityAction.Argument2>
+                                          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="496,425" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en Id de Empleado" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="d968b7f4-3481-4782-bca0-65d421af3603" Text="[CurrentRow.Item(&quot;EmployeeId&quot;)]" Version="V3">
+                                              <uix:NTypeInto.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewEmployeeList" ContentHash="FHvxXWL8HEmhGFWGEQt8ag" CvElementArea="718, 337, 363, 48" CvType="InputBox" DesignTimeRectangle="721, 339, 358, 45" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Escribir en 'Employee Id''" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='INPUT' class='oxd-input oxd-input--active' aaname='' /&gt;" Guid="ce2a8c60-45b6-45a3-bc18-0f8c8b4762ee" InformativeScreenshot="1647a7d7357ea3c08bde7f31cd2daf64.png" IsResponsive="True" Reference="6jWH5XjTdUi-jNNzcz7_Ug/V6fFXoGe1kqwIWUnT-cvdg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='OrangeHRM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" WaitForReadyArgument="Complete">
+                                                  <uix:TargetAnchorable.Anchors>
+                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                      <uix:Target CvTextArea="720, 319, 67, 13" CvTextArgument="Employee Id" CvType="Text" DesignTimeRectangle="721, 317, 66, 16" ElementType="Text" FriendlyName="'Escribir en 'Employee Id''" FullSelectorArgument="&lt;webctrl aaname='Employee Id' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Employee Id' tag='LABEL' type='' class='oxd-label' check:innerText='Employee Id' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                                    </scg:List>
+                                                  </uix:TargetAnchorable.Anchors>
+                                                </uix:TargetAnchorable>
+                                              </uix:NTypeInto.Target>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </uix:NTypeInto>
+                                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en Nombre de Empleado" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="d968b7f4-3481-4782-bca0-65d421af3603" Text="[CurrentRow.Item(&quot;EmployeeName&quot;)]" Version="V3">
+                                              <uix:NTypeInto.Target>
+                                                <uix:TargetAnchorable BrowserURL="https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewEmployeeList" ContentHash="hYF7Nhwp10S5Nl6Fcjd2NQ" CvElementArea="336, 337, 363, 48" CvType="InputBox" DesignTimeRectangle="340, 342, 356, 40" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="''Employee Name''" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='INPUT' class='' aaname='' /&gt;" Guid="fb397e94-e6ec-47e6-92a0-b4458b1e7943" InformativeScreenshot="060f9c64f0d3f102cb377e128d52dd87.png" IsResponsive="True" Reference="6jWH5XjTdUi-jNNzcz7_Ug/pPLYNkrPJU2ka1peyINpJQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='OrangeHRM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                                  <uix:TargetAnchorable.Anchors>
+                                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                      <uix:Target CvTextArea="338, 319, 90, 13" CvTextArgument="Employee Name" CvType="Text" DesignTimeRectangle="339, 317, 88, 16" ElementType="Text" FriendlyName="''Employee Name''" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='oxd-label' aaname='Employee Name' check:innerText='Employee Name' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                                    </scg:List>
+                                                  </uix:TargetAnchorable.Anchors>
+                                                </uix:TargetAnchorable>
+                                              </uix:NTypeInto.Target>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </uix:NTypeInto>
+                                            <TryCatch DisplayName="Intentar capturar" sap:VirtualizedContainerService.HintSize="434,184" sap2010:WorkflowViewState.IdRef="TryCatch_7">
+                                              <TryCatch.Variables>
+                                                <Variable x:TypeArguments="x:String" Name="hora">
+                                                  <Variable.Default>
+                                                    <VisualBasicValue x:TypeArguments="x:String" ExpressionText="TimeOfDay.TimeOfDay.ToString().Replace(&quot;:&quot;,&quot;;&quot;)" />
+                                                  </Variable.Default>
+                                                </Variable>
+                                              </TryCatch.Variables>
+                                              <TryCatch.Try>
+                                                <uix:NSelectItem DisplayName="Seleccionar elemento Puesto de Empleado" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[CurrentRow.Item(&quot;EmploymentStatus&quot;)]" ScopeIdentifier="d968b7f4-3481-4782-bca0-65d421af3603" Version="V3">
+                                                  <uix:NSelectItem.Items>
+                                                    <scg:List x:TypeArguments="x:String" Capacity="7">
+                                                      <x:String>-- Select --</x:String>
+                                                      <x:String>Freelance</x:String>
+                                                      <x:String>Full-Time Contract</x:String>
+                                                      <x:String>Full-Time Permanent</x:String>
+                                                      <x:String>Full-Time Probation</x:String>
+                                                      <x:String>Part-Time Contract</x:String>
+                                                      <x:String>Part-Time Internship</x:String>
+                                                    </scg:List>
+                                                  </uix:NSelectItem.Items>
+                                                  <uix:NSelectItem.Target>
+                                                    <uix:TargetAnchorable BrowserURL="https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewEmployeeList" ContentHash="FWXKdPxFfkSiFzsbt0Gn4Q" CvTextArea="1110, 357, 61, 10" CvTextArgument="-- Select --" CvType="Text" DesignTimeRectangle="1103, 339, 358, 45" DesignTimeScaleFactor="1" FriendlyName="''Employment Status''" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='2' parentid='app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='oxd-select-text oxd-select-text--active' parentid='app' tag='DIV' aaname='' check:innerText='-- Select --' /&gt;" Guid="f3ec4561-adc6-4b3c-8a84-552fe727a707" InformativeScreenshot="b62bbdb857fbf722db8b855f4df7c63a.png" Reference="6jWH5XjTdUi-jNNzcz7_Ug/debq7lMTCUeOODgMakWOBQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='OrangeHRM' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                                      <uix:TargetAnchorable.Anchors>
+                                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                          <uix:Target CvTextArea="1101, 319, 108, 13" CvTextArgument="Employment Status" CvType="Text" DesignTimeRectangle="1103, 317, 106, 16" ElementType="Text" FriendlyName="''Employment Status''" FullSelectorArgument="&lt;webctrl aaname='Employment Status' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Employment Status' tag='LABEL' type='' class='oxd-label' check:innerText='Employment Status' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                                        </scg:List>
+                                                      </uix:TargetAnchorable.Anchors>
+                                                    </uix:TargetAnchorable>
+                                                  </uix:NSelectItem.Target>
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                </uix:NSelectItem>
+                                              </TryCatch.Try>
+                                              <TryCatch.Catches>
+                                                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,21" sap2010:WorkflowViewState.IdRef="Catch`1_7">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <ActivityAction x:TypeArguments="s:Exception">
+                                                    <ActivityAction.Argument>
+                                                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                                    </ActivityAction.Argument>
+                                                    <uix:NTakeScreenshot DisplayName="Realizar captura de pantalla 'Puesto de Empleado'" FileName="[carpetaCapturas+CurrentIndex.ToString()+&quot;_EmploymentStatus_&quot;+CurrentRow.Item(&quot;EmploymentStatus&quot;)+&quot;_&quot;+hora+&quot;.png&quot;]" FileNameMode="None" sap:VirtualizedContainerService.HintSize="334,233" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_1" ScopeIdentifier="d968b7f4-3481-4782-bca0-65d421af3603" Version="V3">
+                                                      <uix:NTakeScreenshot.Target>
+                                                        <uix:TargetAnchorable BrowserURL="https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewEmployeeList" ContentHash="FWXKdPxFfkSiFzsbt0Gn4Q" CvTextArea="1110, 357, 61, 10" CvTextArgument="-- Select --" CvType="Text" DesignTimeRectangle="1103, 339, 358, 45" DesignTimeScaleFactor="1" FriendlyName="'Puesto de Empleado'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='2' parentid='app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='oxd-select-text oxd-select-text--active' parentid='app' tag='DIV' aaname='' check:innerText='-- Select --' /&gt;" Guid="f3ec4561-adc6-4b3c-8a84-552fe727a707" InformativeScreenshot="b62bbdb857fbf722db8b855f4df7c63a.png" Reference="6jWH5XjTdUi-jNNzcz7_Ug/debq7lMTCUeOODgMakWOBQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='OrangeHRM' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                                          <uix:TargetAnchorable.Anchors>
+                                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                              <uix:Target CvTextArea="1101, 319, 108, 13" CvTextArgument="Employment Status" CvType="Text" DesignTimeRectangle="1103, 317, 106, 16" ElementType="Text" FriendlyName="'Puesto de Empleado'" FullSelectorArgument="&lt;webctrl aaname='Employment Status' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Employment Status' tag='LABEL' type='' class='oxd-label' check:innerText='Employment Status' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                                            </scg:List>
+                                                          </uix:TargetAnchorable.Anchors>
+                                                        </uix:TargetAnchorable>
+                                                      </uix:NTakeScreenshot.Target>
+                                                    </uix:NTakeScreenshot>
+                                                  </ActivityAction>
+                                                </Catch>
+                                              </TryCatch.Catches>
+                                              <TryCatch.Finally>
+                                                <uix:NSelectItem DisplayName="Seleccionar elemento Puesto de Empleado" sap:VirtualizedContainerService.HintSize="334,157" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="--Select--" ScopeIdentifier="d968b7f4-3481-4782-bca0-65d421af3603" Version="V3">
+                                                  <uix:NSelectItem.Items>
+                                                    <scg:List x:TypeArguments="x:String" Capacity="7">
+                                                      <x:String>-- Select --</x:String>
+                                                      <x:String>Freelance</x:String>
+                                                      <x:String>Full-Time Contract</x:String>
+                                                      <x:String>Full-Time Permanent</x:String>
+                                                      <x:String>Full-Time Probation</x:String>
+                                                      <x:String>Part-Time Contract</x:String>
+                                                      <x:String>Part-Time Internship</x:String>
+                                                    </scg:List>
+                                                  </uix:NSelectItem.Items>
+                                                  <uix:NSelectItem.Target>
+                                                    <uix:TargetAnchorable BrowserURL="https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewEmployeeList" CvTextArea="1110, 357, 61, 10" CvTextArgument="-- Select --" CvType="Text" DesignTimeRectangle="1103, 339, 358, 45" DesignTimeScaleFactor="1" FriendlyName="'-- Select --'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='2' parentid='app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='oxd-select-text oxd-select-text--active' parentid='app' tag='DIV' aaname='' check:innerText='-- Select --' /&gt;" Guid="f3ec4561-adc6-4b3c-8a84-552fe727a707" InformativeScreenshot="b62bbdb857fbf722db8b855f4df7c63a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='OrangeHRM' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                                      <uix:TargetAnchorable.Anchors>
+                                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                          <uix:Target CvTextArea="1101, 319, 108, 13" CvTextArgument="Employment Status" CvType="Text" DesignTimeRectangle="1103, 317, 106, 16" ElementType="Text" FriendlyName="'Employment Status'" FullSelectorArgument="&lt;webctrl aaname='Employment Status' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Employment Status' tag='LABEL' type='' class='oxd-label' check:innerText='Employment Status' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                                        </scg:List>
+                                                      </uix:TargetAnchorable.Anchors>
+                                                    </uix:TargetAnchorable>
+                                                  </uix:NSelectItem.Target>
+                                                </uix:NSelectItem>
+                                              </TryCatch.Finally>
+                                            </TryCatch>
+                                          </Sequence>
+                                        </ActivityAction>
+                                      </ueab:ExcelForEachRowX.Body>
+                                    </ueab:ExcelForEachRowX>
+                                  </Sequence>
+                                </ActivityAction>
+                              </ueab:ExcelApplicationCard.Body>
+                            </ueab:ExcelApplicationCard>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelProcessScopeX.Body>
+                    </ueab:ExcelProcessScopeX>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="1358, -8, 1936, 1056" BrowserType="Chrome" ContentHash="2E5RCbCPeU6HHqU2dNCKTg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGAUExURf///v759eh8Hv77+Prl0/fRsORpAOd5GP/+/f748/3+/fG1f/K0f+yZUOqMPORlAPjZved6GU2xdeZwCQCKL/738TCmYud1Ev328P3y6azbwPCrbvjVtu6fW/779/72777jzd6qbf327yCcUv307edzEOmEK+mAJP7fyZHQrvHu4cTl0v3z6/K2gvO6iPzw5v/8+fz+/fGudPzl0vK5hvzs3uZxC++kY+d5Gfzt4eRnAORoAE6ydxCXR/CoafjWuf77+eRmAPCpbO6iYfzv5Mnm1SeeVN/y6Od+IWS6hO6dViWkX++lY53YuyedU/CmaO6fWv748uNoAPv9+/rjz++jX/bNqfTEmff8+fzu4fXHoPnexgCILvrizeZyDTSmY/jYvOZwCla0fPCqbffTs7Pexe2aUf///////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOlg/doAAABpdFJOU///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AKA3ZhoAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC3SURBVChTY8iAg/QMQyAJFwiW8hRS1kYSSBKJt/UD0jABVzdNsRgFIAMqkJ6RauPtmw4TkA/JSNdS9AExwQL2TGmhGaIZxl7+zGABlkQZIBGWkcERIA0W4HUGGgEGLhaRQAFG8SgINyNDjj0FpILJHKIASMYlgAT02FghetKTzcBmqHgIh2ekp2cE8gQZpYMEMmLZrdScdO3U+fmAHJBAhqWsqrUjmyA3SCdYICNDXyAjGsTNyAAAT09UkZxCysoAAAAASUVORK5CYII=" InformativeScreenshot="4c2f06ba0ddadca505a6bea189e70231.jpg" Reference="6jWH5XjTdUi-jNNzcz7_Ug/419CWWV1w0GfrcFeHztyCg" Selector="&lt;html app='chrome.exe' title='OrangeHRM' /&gt;" Title="OrangeHRM" Url="https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewEmployeeList" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="1358, -8, 1936, 1056" BrowserType="Chrome" ContentHash="PCI2ee1Nqk-ZuQiOqMJPDw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGAUExURf///v759eh8Hv77+Prl0/fRsORpAOd5GP/+/f748/3+/fG1f/K0f+yZUOqMPORlAPjZved6GU2xdeZwCQCKL/738TCmYud1Ev328P3y6azbwPCrbvjVtu6fW/779/72777jzd6qbf327yCcUv307edzEOmEK+mAJP7fyZHQrvHu4cTl0v3z6/K2gvO6iPzw5v/8+fz+/fGudPzl0vK5hvzs3uZxC++kY+d5Gfzt4eRnAORoAE6ydxCXR/CoafjWuf77+eRmAPCpbO6iYfzv5Mnm1SeeVN/y6Od+IWS6hO6dViWkX++lY53YuyedU/CmaO6fWv748uNoAPv9+/rjz++jX/bNqfTEmff8+fzu4fXHoPnexgCILvrizeZyDTSmY/jYvOZwCla0fPCqbffTs7Pexe2aUf///////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOlg/doAAABpdFJOU///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////AKA3ZhoAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAC3SURBVChTY8iAg/QMQyAJFwiW8hRS1kYSSBKJt/UD0jABVzdNsRgFIAMqkJ6RauPtmw4TkA/JSNdS9AExwQL2TGmhGaIZxl7+zGABlkQZIBGWkcERIA0W4HUGGgEGLhaRQAFG8SgINyNDjj0FpILJHKIASMYlgAT02FghetKTzcBmqHgIh2ekp2cE8gQZpYMEMmLZrdScdO3U+fmAHJBAhqWsqrUjmyA3SCdYICNDXyAjGsTNyAAAT09UkZxCysoAAAAASUVORK5CYII=" InformativeScreenshot="e7c0a18d743bc3e61d2c8bdad1d8689f.jpg" Reference="6jWH5XjTdUi-jNNzcz7_Ug/X1OeJTYE3kGRExtE15lPpA" Selector="&lt;html app='chrome.exe' title='OrangeHRM' /&gt;" Title="OrangeHRM" Url="https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
