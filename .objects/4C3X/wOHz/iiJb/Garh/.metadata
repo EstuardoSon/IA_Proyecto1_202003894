@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Cerrar Ticket",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "GarhESASmkyyJFPv_Ewr9A",
+  "Reference": "6jWH5XjTdUi-jNNzcz7_Ug/GarhESASmkyyJFPv_Ewr9A",
+  "ParentRef": "6jWH5XjTdUi-jNNzcz7_Ug/iiJbl-R3q0yQf8DM-TVgsQ",
+  "Created": "2024-03-17T04:01:50.9470209Z",
+  "Updated": "2024-03-17T04:01:50.9470209Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

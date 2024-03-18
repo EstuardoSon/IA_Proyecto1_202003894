@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="qIqEn9NgDUWnbLrDIEq9CA" Reference="6jWH5XjTdUi-jNNzcz7_Ug/67z-5drc0k-1yRRqYK47tA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://desk.zoho.com/agent/usacia/usac/tickets/details/965462000000341001/attachments" CvTextArea="880, 245, 78, 13" CvTextArgument="RESOLUCION" CvType="Text" DesignTimeRectangle="882, 237, 77, 33" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Resolución'" FullSelectorArgument="&lt;webctrl aaname=' Resolución' parentid='react' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Resolución' parentid='react' tag='DIV' type='' class='zd_v2-tab-tabText zd_v24af66c9aeb zd_v2050393fdda zd_v2eb439ba1e6 zd_v2577c9fa95f' check:innerText='RESOLUCIÓN' /&gt;" Guid="e5f81d23-538a-45a1-9280-6e1e9f7eef97" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*usac' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="97b81d341ad36d5e07f34f286efc517c.png" xmlns="">0o7w0HnhrEkSzi-i4vYkXug</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

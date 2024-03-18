@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="gX8DPaixzkCRa1qoxH7Usw" Reference="6jWH5XjTdUi-jNNzcz7_Ug/_XcsruzUR0CrbwpUaAVQyA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="kMHbj-cPZk-eB7LEfDTwAg" Reference="6jWH5XjTdUi-jNNzcz7_Ug/_XcsruzUR0CrbwpUaAVQyA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
     <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://desk.zoho.com/agent/usacia/usac/tickets/details/965462000000302232" DesignTimeRectangle="725, 370, 210, 60" DesignTimeScaleFactor="1" FriendlyName="'1710184841117.png2.8 MB'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;desk&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='965462000000302299' tabindex='0' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='965462000000302299' tabindex='0' tag='DIV' class='zd_v2-attachment-attachment zd_v2-attachment-attachmentHover zd_v2-attachment-palette_transparent zd_v2-attachment-medium zd_v2bec37a2bbe zd_v2fd3b1bbb3b' aaname='' /&gt;" Guid="25712067-cacc-4b1a-a08b-cb3cbff084ac" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='#111 - usac' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="5e8e82de3a73fd9c54080a98071f41b5.png" xmlns="">09eb66qz64UyDjYgX5ULQ3w</imageRef>
+      <imageRef attrName="InformativeScreenshot" originalValue="00970d2261fbed2274f55232cdd63c96.png" xmlns="">0aUOZR8vbZUui2ZbLJs2ElA</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">None</x:String>
   </ObjectRepositoryTargetData.Data>

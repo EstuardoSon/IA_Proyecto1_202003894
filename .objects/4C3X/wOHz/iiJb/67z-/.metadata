@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Pestaña Resolucion",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "67z-5drc0k-1yRRqYK47tA",
+  "Reference": "6jWH5XjTdUi-jNNzcz7_Ug/67z-5drc0k-1yRRqYK47tA",
+  "ParentRef": "6jWH5XjTdUi-jNNzcz7_Ug/iiJbl-R3q0yQf8DM-TVgsQ",
+  "Created": "2024-03-16T23:11:41.0832159Z",
+  "Updated": "2024-03-16T23:11:41.0832159Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

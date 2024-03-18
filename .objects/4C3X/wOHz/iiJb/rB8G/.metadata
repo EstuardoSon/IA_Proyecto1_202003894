@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Agregar archivo adjunto",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "rB8GDvGHRkWVldoCwSsefg",
+  "Reference": "6jWH5XjTdUi-jNNzcz7_Ug/rB8GDvGHRkWVldoCwSsefg",
+  "ParentRef": "6jWH5XjTdUi-jNNzcz7_Ug/iiJbl-R3q0yQf8DM-TVgsQ",
+  "Created": "2024-03-17T03:06:43.2237527Z",
+  "Updated": "2024-03-17T03:06:43.2237527Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

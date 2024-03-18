@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="xFDJXs4rY0SsUsjWEk3lKg" Reference="6jWH5XjTdUi-jNNzcz7_Ug/TmojxXZCE0ihBBha5irHWg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://desk.zoho.com/agent/usacia/usac/tickets/details/965462000000341001/resolution" CvElementArea="969, 441, 92, 32" CvTextArea="988, 450, 55, 13" CvTextArgument="Guardar" CvType="Button" DesignTimeRectangle="971, 443, 90, 29" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Guardar'" FullSelectorArgument="&lt;webctrl aaname='Guardar' css-selector='body&amp;gt;div&amp;gt;desk&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Guardar' class='zd_button_tag zd_v2-resolutionform-btnMrgn zd_v2-button-bold zd_v2266b1e491d zd_v2-button-primaryfilled zd_v2-button-medium zd_v2-button-container zd_v2-button-native zd_v2-button-varClass zd_v24af66c9aeb' tag='BUTTON' type='button' check:innerText='Guardar' /&gt;" Guid="38cc5d27-d08b-4d0c-a6ac-994d308e0cfb" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*usac' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="58b3bd7b7fd174cf2c85d5438bf0b54c.png" xmlns="">0ra_IyDXE8EeIlEeuUjFpaQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

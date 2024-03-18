@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="sHF1XnjQmkGNrG8btHMi5g" Reference="6jWH5XjTdUi-jNNzcz7_Ug/aFAEVqfXsUCn-oujQ26PuA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://desk.zoho.com/agent/usacia/usac/tickets/details/965462000000341001/attachments" DesignTimeRectangle="1097, 361, 220, 35" DesignTimeScaleFactor="1" ElementType="ListItem" FriendlyName="'Buscar archivos'" FullSelectorArgument="&lt;webctrl aria-label='Buscar archivos' aria-role='menuitem' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Buscar archivos' aria-role='menuitem' tag='LI' type='' class='zd_li_tag zd_v2-listitem-list zd_v2-listitem-varClass zd_v2-listitem-medium zd_v2-listitem-default zd_v2-listitem-defaultEffect zd_v2-listitem-mediumwithTick zd_v2ff266bc91b zd_v2fd3b1bbb3b zd_v2bd11ce84cf' aaname='' check:innerText='Buscar archivos' /&gt;" Guid="ab5a8c4f-e2df-4985-a2d7-f8150ccc3524" ScopeSelectorArgument="&lt;html app='chrome.exe' title='#115 - usac' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1143, 290, 145, 15" ElementType="Text" FriendlyName="'Agregar archivo adjunto'" FullSelectorArgument="&lt;webctrl id='ZD_266' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ZD_266' tag='SPAN' type='' class='zd_v2-toggledropdown-value zd_v24af66c9aeb zd_v26c759e2fb3 toggleDropText zd_v2a4cf259821' aaname='Agregar archivo adjunto' check:innerText='Agregar archivo adjunto' /&gt;" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="29acbc4835f123b63df18afda2b2ecbb.png" xmlns="">044VeOCzKJkyCEDUxG_JFQQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

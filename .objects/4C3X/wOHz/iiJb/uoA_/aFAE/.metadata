@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Buscar archivos Flotante",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "aFAEVqfXsUCn-oujQ26PuA",
+  "Reference": "6jWH5XjTdUi-jNNzcz7_Ug/aFAEVqfXsUCn-oujQ26PuA",
+  "ParentRef": "6jWH5XjTdUi-jNNzcz7_Ug/uoA_Z00K0kC5xmavtlZFzQ",
+  "Created": "2024-03-17T03:33:34.7250016Z",
+  "Updated": "2024-03-17T03:33:34.7250016Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

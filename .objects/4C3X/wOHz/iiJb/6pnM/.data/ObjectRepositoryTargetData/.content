@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ZG1munVM-UOGTGEmHYb82g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://desk.zoho.com/agent/usacia/usac/tickets/details/965462000000341001/attachments" DesignTimeRectangle="725, 237, 103, 33" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'1 Conversación'" FullSelectorArgument="&lt;webctrl aaname='1 Conversación' parentid='react' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='1 Conversación' parentid='react' tag='DIV' type='' class='zd_v2-tab-tabText zd_v24af66c9aeb zd_v2050393fdda zd_v2eb439ba1e6 zd_v2577c9fa95f' check:innerText='* CONVERSACIÓN' /&gt;" Guid="1b4548b9-66cc-4b3a-bd8f-fb072d759d32" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*usac' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="4f1871e32c7aa3d54c5af09a82b509e3.png" xmlns="">0s8jcjcmM4kSmnJL2eLKJbQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

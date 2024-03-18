@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="EDcgyOPa0Uy33-cBGKujKw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewEmployeeList" DesignTimeRectangle="312, 418, 1003, 2603" DesignTimeScaleFactor="1" FriendlyName="'IdAscendingDescendingFi…'" FullSelectorArgument="&lt;webctrl class='orangehrm-container' parentid='app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='orangehrm-container' parentid='app' tag='DIV' type='' aaname='' /&gt;" Guid="144fd77f-dcdc-4e51-91f5-b74001dc7852" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='OrangeHRM' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a08a99b83620076ef06cf8096f2ad5a6.png" xmlns="">08SAwveMzPEiGZZ5Uz_tHEA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TakeScreenshot</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

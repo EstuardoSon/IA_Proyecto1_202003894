@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="chZ6Kus5Yku_5itC4DXL3w" Reference="6jWH5XjTdUi-jNNzcz7_Ug/23rEKIGBZ02zkQ_p9x_gTg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://desk.zoho.com/agent/usacia/usac/tickets/details/965462000000341001/resolution" CvTextArea="768, 296, 128, 16" CvTextArgument="Agregar resolucion" CvType="Text" DesignTimeRectangle="770, 294, 574, 132" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'TEXTAREA'" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' type='' class='zd_v2-resolutionform-textArea zd_v2-textarea-container zd_v2-textarea-basic zd_v2-textarea-varClass zd_v2-textarea-medium zd_v2-textarea-default zd_v2-textarea-noBorder zd_v2-textarea-noresize zd_v27d162e417f zd_v2-textarea-effect zd_v2-textarea-borderColor_default' aaname='' /&gt;" Guid="38019889-01c5-42fa-b1a2-70ce92105136" ImageBase64="" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*usac' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CvTextArea="730, 302, 19, 12" CvTextArgument="EG" CvType="Text" DesignTimeRectangle="732, 302, 16, 14" ElementType="Text" FriendlyName="'EG'" FullSelectorArgument="&lt;webctrl aaname='EG' css-selector='body&amp;gt;div&amp;gt;desk&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='EG' type='' tag='SPAN' class='zd_v2-avatar-initial' /&gt;" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6f66cb0b831270c6e12e3445cc099c0f.png" xmlns="">0BBmzBDp3_ki7KvAfiJyd-g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="44YDQyzysUWnPp3caEJogg" Reference="6jWH5XjTdUi-jNNzcz7_Ug/pUPrE4VLi0aNz1hsl8sREQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewEmployeeList" CvTextArea="833, 438, 60, 12" CvTextArgument="-- Select --" CvType="Text" DesignTimeRectangle="826, 423, 219, 45" DesignTimeScaleFactor="1" FriendlyName="'-- Select --'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='6' parentid='app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='oxd-select-text oxd-select-text--active' parentid='app' tag='DIV' aaname='' /&gt;" Guid="0746328b-7d6f-496d-83cf-5cf944cdcdf2" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='OrangeHRM' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CvTextArea="824, 402, 50, 11" CvTextArgument="Sub Unit" CvType="Text" DesignTimeRectangle="826, 400, 47, 16" ElementType="Text" FriendlyName="'Sub Unit'" FullSelectorArgument="&lt;webctrl aaname='Sub Unit' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Sub Unit' tag='LABEL' type='' class='oxd-label' check:innerText='Sub Unit' /&gt;" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="52f850e0a77dc601586e77ab63dc8d7b.png" xmlns="">0zqobhiRH-021KtgHdJRCgA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

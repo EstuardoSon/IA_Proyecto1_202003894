@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Apartado de Resultados",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "U3yCwxi2r0C8RuzJdFcxZg",
+  "Reference": "6jWH5XjTdUi-jNNzcz7_Ug/U3yCwxi2r0C8RuzJdFcxZg",
+  "ParentRef": "6jWH5XjTdUi-jNNzcz7_Ug/419CWWV1w0GfrcFeHztyCg",
+  "Created": "2024-03-16T18:22:23.7597158Z",
+  "Updated": "2024-03-16T18:22:23.7597158Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

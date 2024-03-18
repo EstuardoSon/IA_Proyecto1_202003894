@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="IeU3DO84wkeosMVkvSjdsw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://desk.zoho.com/agent/usacia/usac/tickets/details/965462000000341001/attachments" CvElementArea="1043, 637, 136, 32" CvTextArea="1060, 646, 103, 13" CvTextArgument="Buscar Archivos" CvType="Button" DesignTimeRectangle="1045, 639, 133, 29" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Buscar archivos'" FullSelectorArgument="&lt;webctrl aaname='Buscar archivos' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Buscar archivos' tag='BUTTON' type='button' class='zd_button_tag zd_v2-button-bold zd_v2266b1e491d zd_v2-button-primaryfilled zd_v2-button-medium zd_v2-button-container zd_v2-button-native zd_v2-button-varClass zd_v24af66c9aeb' check:innerText='Buscar Archivos' /&gt;" Guid="d1231188-4410-485d-ba37-6ad4477a0672" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*usac' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f349b4565d0853d1f5729fb59e047a1c.png" xmlns="">0dcaXvV8Yd0-I5NuqhTJAdw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

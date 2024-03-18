@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="HhE0AeDLg0qrBNmz8HGMqg" Reference="6jWH5XjTdUi-jNNzcz7_Ug/AbUXB08KDk6xJcGxgn_v8w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewEmployeeList" CvTextArea="1077, 356, 115, 13" CvTextArgument="Past Employees Only" CvType="Text" DesignTimeRectangle="1069, 339, 219, 45" DesignTimeScaleFactor="1" FriendlyName="'Past Employees Only'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='3' parentid='app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='oxd-select-text oxd-select-text--active' parentid='app' tag='DIV' aaname='' /&gt;" Guid="036574af-8418-4506-9b93-78e9f962e964" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='OrangeHRM' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CvTextArea="1067, 319, 41, 11" CvTextArgument="Include" CvType="Text" DesignTimeRectangle="1069, 317, 219, 16" FriendlyName="'Include'" FullSelectorArgument="&lt;webctrl class='oxd-input-group__label-wrapper' idx='4' parentid='app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='oxd-input-group__label-wrapper' type='' parentid='app' tag='DIV' aaname='' check:innerText='Include' /&gt;" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="552d2e2dab0b4b03e455cf334c39cb28.png" xmlns="">0SLE0XJiA_Um6_n4IqpDCkA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="sxs6Nry4ZkCB_Y0kjFnAiQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://desk.zoho.com/agent/usacia/usac/tickets/details/965462000000341001/attachments" CvTextArea="1141, 290, 148, 15" CvTextArgument="Agregar archivo adjunto" CvType="Text" DesignTimeRectangle="1143, 290, 145, 15" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Agregar archivo adjunto'" FullSelectorArgument="&lt;webctrl id='ZD_266' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ZD_266' tag='SPAN' type='' class='zd_v2-toggledropdown-value zd_v24af66c9aeb zd_v26c759e2fb3 toggleDropText zd_v2a4cf259821' aaname='Agregar archivo adjunto' check:innerText='Agregar archivo adjunto' /&gt;" Guid="ebe6d6e9-4077-4700-9435-c33b1f52a7dd" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*usac' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CvElementArea="1289, 289, 15, 16" CvTextArea="1141, 290, 148, 15" CvTextArgument="Agregar archivo adjunto" CvType="ArrowButton" DesignTimeRectangle="1133, 283, 176, 28" ElementType="Button" FriendlyName="'Agregar archivo adjunto'" FullSelectorArgument="&lt;webctrl aria-labelledby='ZD_266' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-labelledby='ZD_266' tag='BUTTON' type='' class='zd_button_tag zd_v2-semanticbutton-buttonReset zd_v2-detailsubtab-box zd_v2-appcommon-rippleEffectBoxHeight zd_v2-appcommon-rippleEffectBoxPadding zd_v2-detailsubtab-colorBlue zd_v2-detailsubtab-pointer zd_v2-detailsubtab-subtabFilter zd_v2-toggledropdown-cursorDefault zd_v2-rippleeffect-effect zd_v2-rippleeffect-default zd_v2-rippleeffect-border zd_v2-rippleeffect-bgHover zd_v2-rippleeffect-hoverEffect zd_v2ff266bc91b zd_v2fd3b1bbb3b zd_v2bd11ce84cf' aaname='Agregar archivo adjunto' check:innerText='Agregar archivo adjunto' /&gt;" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b39d06f70cee7aaa779aa61e18d68aae.png" xmlns="">0kZRI-PV_DEOzKI3I7LsEUg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Hover</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

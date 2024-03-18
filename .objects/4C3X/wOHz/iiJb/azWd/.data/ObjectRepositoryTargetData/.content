@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="-yX_RHn5WU6lRSVXKolPXg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://desk.zoho.com/agent/usacia/usac/tickets/details/965462000000302232" DesignTimeRectangle="725, 370, 210, 60" DesignTimeScaleFactor="1" FriendlyName="'1710184841117.png2.8 MB'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;desk&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='965462000000302299' tabindex='0' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='965462000000302299' tabindex='0' tag='DIV' class='zd_v2-attachment-attachment zd_v2-attachment-attachmentHover zd_v2-attachment-palette_transparent zd_v2-attachment-medium zd_v2bec37a2bbe zd_v2fd3b1bbb3b' aaname='' /&gt;" Guid="ee48d21e-a2f0-457c-836f-cdf9ed874645" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='#111 - usac' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="e307be9bdc514bdd8bb8448dadb8f9ff.png" xmlns="">0duANBAig6kKIZXuNGd1k8w</imageRef>
-    </TargetAnchorable>
-    <x:String x:Key="ActivityType">InjectJsScript</x:String>
-  </ObjectRepositoryTargetData.Data>
-</ObjectRepositoryTargetData>

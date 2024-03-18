@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="FHvxXWL8HEmhGFWGEQt8ag" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="ZX4rn-ZSYUuQJOQPjLCNTg" Reference="6jWH5XjTdUi-jNNzcz7_Ug/V6fFXoGe1kqwIWUnT-cvdg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewEmployeeList" CvElementArea="718, 337, 363, 48" CvType="InputBox" DesignTimeRectangle="721, 339, 358, 45" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='INPUT' class='oxd-input oxd-input--active' aaname='' /&gt;" Guid="ce2a8c60-45b6-45a3-bc18-0f8c8b4762ee" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='OrangeHRM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewEmployeeList" CvElementArea="718, 337, 363, 48" CvType="InputBox" DesignTimeRectangle="582, 339, 219, 45" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;input' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='INPUT' class='oxd-input oxd-input--active' aaname='' /&gt;" Guid="ce2a8c60-45b6-45a3-bc18-0f8c8b4762ee" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='OrangeHRM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
       <TargetAnchorable.Anchors>
         <scg:List x:TypeArguments="ITarget" Capacity="4">
-          <Target CvTextArea="720, 319, 67, 13" CvTextArgument="Employee Id" CvType="Text" DesignTimeRectangle="721, 317, 66, 16" ElementType="Text" FriendlyName="'Employee Id'" FullSelectorArgument="&lt;webctrl aaname='Employee Id' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Employee Id' tag='LABEL' type='' class='oxd-label' check:innerText='Employee Id' /&gt;" SearchSteps="FuzzySelector, CV" />
+          <Target CvTextArea="720, 319, 67, 13" CvTextArgument="Employee Id" CvType="Text" DesignTimeRectangle="582, 317, 66, 16" ElementType="Text" FriendlyName="'Employee Id'" FullSelectorArgument="&lt;webctrl aaname='Employee Id' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Employee Id' tag='LABEL' type='' class='oxd-label' check:innerText='Employee Id' /&gt;" SearchSteps="FuzzySelector, CV" />
         </scg:List>
       </TargetAnchorable.Anchors>
-      <imageRef attrName="InformativeScreenshot" originalValue="1647a7d7357ea3c08bde7f31cd2daf64.png" xmlns="">0Y-5Ym6hffEmxOOeYejAEvQ</imageRef>
+      <imageRef attrName="InformativeScreenshot" originalValue="3a0c7f4228c2c3b30fcdf299d5e86e16.png" xmlns="">0EiPHmU4v9k2noaPjduAJOA</imageRef>
     </TargetAnchorable>
-    <x:String x:Key="ActivityType">TypeInto</x:String>
+    <x:String x:Key="ActivityType">None</x:String>
   </ObjectRepositoryTargetData.Data>
 </ObjectRepositoryTargetData>

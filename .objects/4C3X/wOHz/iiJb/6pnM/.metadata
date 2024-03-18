@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Pestaña Conversación",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "6pnMeWxgNUWKgUcXf8Flew",
+  "Reference": "6jWH5XjTdUi-jNNzcz7_Ug/6pnMeWxgNUWKgUcXf8Flew",
+  "ParentRef": "6jWH5XjTdUi-jNNzcz7_Ug/iiJbl-R3q0yQf8DM-TVgsQ",
+  "Created": "2024-03-17T04:00:48.7737494Z",
+  "Updated": "2024-03-17T04:00:48.7737494Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

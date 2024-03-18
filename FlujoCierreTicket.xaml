@@ -1,0 +1,304 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="FlujoCierreTicket" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="dirArchivo" Type="InArgument(x:String)" />
+    <x:Property Name="carpetaCapturas" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>700,942</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>FlujoCierreTicket_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Core.Activities.Storage</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.Mail.Activities.Utils</x:String>
+      <x:String>UiPath.Mail.Activities.Business.HtmlEditor</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="FlujoCierreTicket" sap:VirtualizedContainerService.HintSize="592,877" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="1920041821223@ingenieria.usac.edu.gt" Name="correoAux" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Ticket" sap:VirtualizedContainerService.HintSize="530,25" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="9970a41b-5f3d-4fc0-a0ed-78d55ee0cd1a" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="546,3194" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Pestaña Resolucion'" sap:VirtualizedContainerService.HintSize="484,157" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9970a41b-5f3d-4fc0-a0ed-78d55ee0cd1a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://desk.zoho.com/agent/usacia/usac/tickets/details/965462000000341001/attachments" ContentHash="qIqEn9NgDUWnbLrDIEq9CA" CvTextArea="880, 245, 78, 13" CvTextArgument="RESOLUCION" CvType="Text" DesignTimeRectangle="882, 237, 77, 33" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Pestaña Resolucion'" FullSelectorArgument="&lt;webctrl aaname=' Resolución' parentid='react' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Resolución' parentid='react' tag='DIV' type='' class='zd_v2-tab-tabText zd_v24af66c9aeb zd_v2050393fdda zd_v2eb439ba1e6 zd_v2577c9fa95f' check:innerText='RESOLUCIÓN' /&gt;" Guid="e5f81d23-538a-45a1-9280-6e1e9f7eef97" ImageBase64="" InformativeScreenshot="97b81d341ad36d5e07f34f286efc517c.png" Reference="6jWH5XjTdUi-jNNzcz7_Ug/67z-5drc0k-1yRRqYK47tA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*usac' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en Respusta Ticket" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="DebuggerApi" ScopeIdentifier="9970a41b-5f3d-4fc0-a0ed-78d55ee0cd1a" Text="Se finalizo el proceso de validacion de usuarios, favor de validar" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://desk.zoho.com/agent/usacia/usac/tickets/details/965462000000341001/resolution" ContentHash="chZ6Kus5Yku_5itC4DXL3w" CvTextArea="768, 296, 128, 16" CvTextArgument="Agregar resolucion" CvType="Text" DesignTimeRectangle="770, 294, 574, 132" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Respusta Ticket'" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' type='' class='zd_v2-resolutionform-textArea zd_v2-textarea-container zd_v2-textarea-basic zd_v2-textarea-varClass zd_v2-textarea-medium zd_v2-textarea-default zd_v2-textarea-noBorder zd_v2-textarea-noresize zd_v27d162e417f zd_v2-textarea-effect zd_v2-textarea-borderColor_default' aaname='' /&gt;" Guid="38019889-01c5-42fa-b1a2-70ce92105136" ImageBase64="" InformativeScreenshot="6f66cb0b831270c6e12e3445cc099c0f.png" IsResponsive="True" Reference="6jWH5XjTdUi-jNNzcz7_Ug/23rEKIGBZ02zkQ_p9x_gTg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*usac' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="730, 302, 19, 12" CvTextArgument="EG" CvType="Text" DesignTimeRectangle="732, 302, 16, 14" ElementType="Text" FriendlyName="'Respusta Ticket'" FullSelectorArgument="&lt;webctrl aaname='EG' css-selector='body&amp;gt;div&amp;gt;desk&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='EG' type='' tag='SPAN' class='zd_v2-avatar-initial' /&gt;" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Guardar Respuesta'" sap:VirtualizedContainerService.HintSize="484,157" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9970a41b-5f3d-4fc0-a0ed-78d55ee0cd1a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://desk.zoho.com/agent/usacia/usac/tickets/details/965462000000341001/resolution" ContentHash="xFDJXs4rY0SsUsjWEk3lKg" CvElementArea="969, 441, 92, 32" CvTextArea="988, 450, 55, 13" CvTextArgument="Guardar" CvType="Button" DesignTimeRectangle="971, 443, 90, 29" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Guardar Respuesta'" FullSelectorArgument="&lt;webctrl aaname='Guardar' css-selector='body&amp;gt;div&amp;gt;desk&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Guardar' class='zd_button_tag zd_v2-resolutionform-btnMrgn zd_v2-button-bold zd_v2266b1e491d zd_v2-button-primaryfilled zd_v2-button-medium zd_v2-button-container zd_v2-button-native zd_v2-button-varClass zd_v24af66c9aeb' tag='BUTTON' type='button' check:innerText='Guardar' /&gt;" Guid="38cc5d27-d08b-4d0c-a6ac-994d308e0cfb" ImageBase64="" InformativeScreenshot="58b3bd7b7fd174cf2c85d5438bf0b54c.png" Reference="6jWH5XjTdUi-jNNzcz7_Ug/TmojxXZCE0ihBBha5irHWg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*usac' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Adjunto'" sap:VirtualizedContainerService.HintSize="484,157" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9970a41b-5f3d-4fc0-a0ed-78d55ee0cd1a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://desk.zoho.com/agent/usacia/usac/tickets/details/965462000000341001/resolution" CvTextArea="1145, 247, 54, 11" CvTextArgument="ADJUNTO" CvType="Text" DesignTimeRectangle="1146, 237, 54, 33" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Adjunto'" FullSelectorArgument="&lt;webctrl aaname=' Adjunto' parentid='react' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' Adjunto' parentid='react' tag='DIV' type='' class='zd_v2-tab-tabText zd_v24af66c9aeb zd_v2050393fdda zd_v2eb439ba1e6 zd_v2577c9fa95f' check:innerText='ADJUNTO' /&gt;" Guid="7845b04e-9d1d-4c26-9dc7-5d106a60c2fb" InformativeScreenshot="b4c1e88cb91cd9071a39d9fca2493005.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*usac' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Buscar archivos'" sap:VirtualizedContainerService.HintSize="484,157" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9970a41b-5f3d-4fc0-a0ed-78d55ee0cd1a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://desk.zoho.com/agent/usacia/usac/tickets/details/965462000000341001/attachments" ContentHash="IeU3DO84wkeosMVkvSjdsw" CvElementArea="1043, 637, 136, 32" CvTextArea="1060, 646, 103, 13" CvTextArgument="Buscar Archivos" CvType="Button" DesignTimeRectangle="1045, 639, 133, 29" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Buscar archivos'" FullSelectorArgument="&lt;webctrl aaname='Buscar archivos' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Buscar archivos' tag='BUTTON' type='button' class='zd_button_tag zd_v2-button-bold zd_v2266b1e491d zd_v2-button-primaryfilled zd_v2-button-medium zd_v2-button-container zd_v2-button-native zd_v2-button-varClass zd_v24af66c9aeb' check:innerText='Buscar Archivos' /&gt;" Guid="d1231188-4410-485d-ba37-6ad4477a0672" InformativeScreenshot="f349b4565d0853d1f5729fb59e047a1c.png" Reference="6jWH5XjTdUi-jNNzcz7_Ug/uQCnVUc8wE-is-Xvio7nig" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*usac' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'Escribir Archivo'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="HardwareEvents" ScopeIdentifier="9970a41b-5f3d-4fc0-a0ed-78d55ee0cd1a" Text="[dirArchivo]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable ContentHash="EWzsdl8BE0yLPbgoZgSf_A" CvElementArea="244, 464, 493, 26" CvType="InputBox" DesignTimeRectangle="252, 470, 463, 15" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Escribir Archivo'" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="755b83d9-fecd-4d3b-a077-ab561dbb2119" InformativeScreenshot="ebce10f659bdcb8e2413573c5e0dda67.png" Reference="6jWH5XjTdUi-jNNzcz7_Ug/InRxl1ogk0Gm7g8o9MLpFg" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Abrir' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Cargar Archivo'" sap:VirtualizedContainerService.HintSize="484,157" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9970a41b-5f3d-4fc0-a0ed-78d55ee0cd1a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable ContentHash="04wD1k2Cmke64HqMeAEdEg" CvElementArea="746, 494, 89, 27" CvTextArea="776, 500, 29, 12" CvTextArgument="Abrir" CvType="Button" DesignTimeRectangle="747, 494, 88, 26" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Cargar Archivo'" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Abrir' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Abrir' check:text='unchecked' /&gt;" Guid="9d2aa3e1-1a7c-4e2e-a489-07b3a76a2749" InformativeScreenshot="ddbd26fff7b428bc5cd77c0c576a0562.png" Reference="6jWH5XjTdUi-jNNzcz7_Ug/uoA_Z00K0kC5xmavtlZFzQ" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Abrir' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:ForEachFileX DisplayName="Para cada archivo en la carpeta" Filter="*.png" Folder="[carpetaCapturas]" sap:VirtualizedContainerService.HintSize="484,1184" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+              <ui:ForEachFileX.Body>
+                <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
+                  <ActivityAction.Argument1>
+                    <DelegateInArgument x:TypeArguments="si:FileInfo" Name="CurrentFile" />
+                  </ActivityAction.Argument1>
+                  <ActivityAction.Argument2>
+                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                  </ActivityAction.Argument2>
+                  <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="450,922" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NHover DisplayName="Mantener el puntero 'Agregar archivo adjunto'" sap:VirtualizedContainerService.HintSize="388,157" HoverTime="2" sap2010:WorkflowViewState.IdRef="NHover_5" InteractionMode="DebuggerApi" ScopeIdentifier="9970a41b-5f3d-4fc0-a0ed-78d55ee0cd1a" Version="V3">
+                      <uix:NHover.Target>
+                        <uix:TargetAnchorable BrowserURL="https://desk.zoho.com/agent/usacia/usac/tickets/details/965462000000341001/attachments" ContentHash="sxs6Nry4ZkCB_Y0kjFnAiQ" CvTextArea="1141, 290, 148, 15" CvTextArgument="Agregar archivo adjunto" CvType="Text" DesignTimeRectangle="1143, 290, 145, 15" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Agregar archivo adjunto'" FullSelectorArgument="&lt;webctrl id='ZD_266' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ZD_266' tag='SPAN' type='' class='zd_v2-toggledropdown-value zd_v24af66c9aeb zd_v26c759e2fb3 toggleDropText zd_v2a4cf259821' aaname='Agregar archivo adjunto' check:innerText='Agregar archivo adjunto' /&gt;" Guid="ebe6d6e9-4077-4700-9435-c33b1f52a7dd" InformativeScreenshot="b39d06f70cee7aaa779aa61e18d68aae.png" Reference="6jWH5XjTdUi-jNNzcz7_Ug/rB8GDvGHRkWVldoCwSsefg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*usac' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvElementArea="1289, 289, 15, 16" CvTextArea="1141, 290, 148, 15" CvTextArgument="Agregar archivo adjunto" CvType="ArrowButton" DesignTimeRectangle="1133, 283, 176, 28" ElementType="Button" FriendlyName="'Agregar archivo adjunto'" FullSelectorArgument="&lt;webctrl aria-labelledby='ZD_266' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-labelledby='ZD_266' tag='BUTTON' type='' class='zd_button_tag zd_v2-semanticbutton-buttonReset zd_v2-detailsubtab-box zd_v2-appcommon-rippleEffectBoxHeight zd_v2-appcommon-rippleEffectBoxPadding zd_v2-detailsubtab-colorBlue zd_v2-detailsubtab-pointer zd_v2-detailsubtab-subtabFilter zd_v2-toggledropdown-cursorDefault zd_v2-rippleeffect-effect zd_v2-rippleeffect-default zd_v2-rippleeffect-border zd_v2-rippleeffect-bgHover zd_v2-rippleeffect-hoverEffect zd_v2ff266bc91b zd_v2fd3b1bbb3b zd_v2bd11ce84cf' aaname='Agregar archivo adjunto' check:innerText='Agregar archivo adjunto' /&gt;" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NHover.Target>
+                    </uix:NHover>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Buscar archivos Flotante'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9970a41b-5f3d-4fc0-a0ed-78d55ee0cd1a" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://desk.zoho.com/agent/usacia/usac/tickets/details/965462000000341001/attachments" ContentHash="sHF1XnjQmkGNrG8btHMi5g" DesignTimeRectangle="1097, 361, 220, 35" DesignTimeScaleFactor="1" ElementType="ListItem" FriendlyName="'Buscar archivos Flotante'" FullSelectorArgument="&lt;webctrl aria-label='Buscar archivos' aria-role='menuitem' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-label='Buscar archivos' aria-role='menuitem' tag='LI' type='' class='zd_li_tag zd_v2-listitem-list zd_v2-listitem-varClass zd_v2-listitem-medium zd_v2-listitem-default zd_v2-listitem-defaultEffect zd_v2-listitem-mediumwithTick zd_v2ff266bc91b zd_v2fd3b1bbb3b zd_v2bd11ce84cf' aaname='' check:innerText='Buscar archivos' /&gt;" Guid="ab5a8c4f-e2df-4985-a2d7-f8150ccc3524" InformativeScreenshot="29acbc4835f123b63df18afda2b2ecbb.png" Reference="6jWH5XjTdUi-jNNzcz7_Ug/aFAEVqfXsUCn-oujQ26PuA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='#115 - usac' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="1143, 290, 145, 15" ElementType="Text" FriendlyName="'Buscar archivos Flotante'" FullSelectorArgument="&lt;webctrl id='ZD_266' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ZD_266' tag='SPAN' type='' class='zd_v2-toggledropdown-value zd_v24af66c9aeb zd_v26c759e2fb3 toggleDropText zd_v2a4cf259821' aaname='Agregar archivo adjunto' check:innerText='Agregar archivo adjunto' /&gt;" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'Escribir Archivo'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="9970a41b-5f3d-4fc0-a0ed-78d55ee0cd1a" Text="[CurrentFile.FullName]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable ContentHash="EWzsdl8BE0yLPbgoZgSf_A" CvElementArea="244, 464, 493, 26" CvType="InputBox" DesignTimeRectangle="252, 470, 463, 15" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Escribir Archivo'" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="755b83d9-fecd-4d3b-a077-ab561dbb2119" InformativeScreenshot="ebce10f659bdcb8e2413573c5e0dda67.png" Reference="6jWH5XjTdUi-jNNzcz7_Ug/InRxl1ogk0Gm7g8o9MLpFg" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Abrir' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Cargar Archivo'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_10" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9970a41b-5f3d-4fc0-a0ed-78d55ee0cd1a" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable ContentHash="04wD1k2Cmke64HqMeAEdEg" CvElementArea="746, 494, 89, 27" CvTextArea="776, 500, 29, 12" CvTextArgument="Abrir" CvType="Button" DesignTimeRectangle="747, 494, 88, 26" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Cargar Archivo'" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Abrir' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Abrir' check:text='unchecked' /&gt;" Guid="9d2aa3e1-1a7c-4e2e-a489-07b3a76a2749" InformativeScreenshot="ddbd26fff7b428bc5cd77c0c576a0562.png" Reference="6jWH5XjTdUi-jNNzcz7_Ug/uoA_Z00K0kC5xmavtlZFzQ" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Abrir' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachFileX.Body>
+            </ui:ForEachFileX>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Conversación'" sap:VirtualizedContainerService.HintSize="484,157" sap2010:WorkflowViewState.IdRef="NClick_14" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9970a41b-5f3d-4fc0-a0ed-78d55ee0cd1a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://desk.zoho.com/agent/usacia/usac/tickets/details/965462000000341001/attachments" ContentHash="ZG1munVM-UOGTGEmHYb82g" DesignTimeRectangle="725, 237, 103, 33" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Pestaña Conversación'" FullSelectorArgument="&lt;webctrl aaname='1 Conversación' parentid='react' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='1 Conversación' parentid='react' tag='DIV' type='' class='zd_v2-tab-tabText zd_v24af66c9aeb zd_v2050393fdda zd_v2eb439ba1e6 zd_v2577c9fa95f' check:innerText='* CONVERSACIÓN' /&gt;" Guid="1b4548b9-66cc-4b3a-bd8f-fb072d759d32" ImageBase64="" InformativeScreenshot="4f1871e32c7aa3d54c5af09a82b509e3.png" Reference="6jWH5XjTdUi-jNNzcz7_Ug/6pnMeWxgNUWKgUcXf8Flew" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*usac' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Clic 'Cerrar Ticket'" sap:VirtualizedContainerService.HintSize="484,157" sap2010:WorkflowViewState.IdRef="NClick_15" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9970a41b-5f3d-4fc0-a0ed-78d55ee0cd1a" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://desk.zoho.com/agent/usacia/usac/tickets/details/965462000000341001/conversation" ContentHash="rCvoOa9aEUafoDrKmH2C1A" DesignTimeRectangle="1231, 669, 113, 29" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Cerrar Ticket'" FullSelectorArgument="&lt;webctrl aaname='Cerrar Ticket' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Cerrar Ticket' tag='BUTTON' type='button' class='zd_button_tag zd_v2-ticketclosebutton-btnTxt zd_v2-button-bold zd_v2266b1e491d zd_v2-button-primary zd_v2-button-medium zd_v2-button-container zd_v2-button-native zd_v2-button-varClass zd_v24af66c9aeb' check:innerText='Cerrar Ticket' /&gt;" Guid="c1b83868-2cab-4e3f-a3c0-e1266b87bb8f" ImageBase64="" InformativeScreenshot="45cfcd0826c263dab6ccadc411896a38.png" Reference="6jWH5XjTdUi-jNNzcz7_Ug/GarhESASmkyyJFPv_Ewr9A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*usac' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="CJYSAxw6jESGSKxxgmH4nw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKHSURBVDhPhZPtS5NRGMYlC6GIgqh/oL70tRd6xTKyPhSB9CXog5EV5tRlpYsSEgTBysKyDKtVEKlMp9uojEjH3ObLJEW3ls5cb3PTLefUvbjHPVf3OTvSB3u54Dee5z7XdXN27vOk/EsANkuJhZ5ANCRPRIJgzMbpB7hDrBG2v4tMpTq3BXtblNjXWoT0lgvIaruOvskRidYUwvZnkWEZ0VDYWYMzHbfQ7fsIs3cIp9pvIM9UTUtoIVYI+1LR4qp4Quo83laGQ4YS6N1WFkKZ7TkUprvssZFIFfakqLCS2EJkEkeI3jdfe3H01TUc0F3GXDyK7PeVqBrQ0BIqRCwpKqxPyPJT94w32O1zxmjLsZ4J50K/fxQlXXU4+a4Cofkw3412rJM1yBHRpKhQZPQMyLu1BWCwg9ujLeRs05zHs09v8W12AjuaFbBNDkfInyGiPJxKaPLpvynNNXDP+NDvd8EXmeL4o9MY+unmB5ipL6FxTn0n/yYR5w3WhqWY7djrUtS72mEn80F9MZo+mxCMzaLWrsf2pjycM97GyDTL4h6xXMR5g42eucAPtm2L1w46C77lrZpc7GouQIbuElrHLDCND9IdGGYNropoUlRI/+B3hXc259P2vczAZfU58NBhwHg4wN9z6D5U9jewx5simhQVsnVuq8y2PRMPM8MShaUoDhtUaBw1stdcEU2KCuXVg1qwS9Po6oCKxsZGt4iq6xHOGqv4OTimvsyRf7+I8jCbwEul+T7WqbP42IosD3CFQouwBqU9anTQmOl86sm/WsR5gzRZlg3lfS9w0VKL0ZCHfW3snj8mngjURB2hIDaI6G9R8XREigXnE5KTnk8QaWLpP0pJ+QXgDlI/XSFonAAAAABJRU5ErkJggg==" InformativeScreenshot="c8238448a57c73da95cef755dfa74f8f.jpg" Reference="6jWH5XjTdUi-jNNzcz7_Ug/iiJbl-R3q0yQf8DM-TVgsQ" Selector="&lt;html app='chrome.exe' title='*usac' /&gt;" Title="#108 - usac" Url="https://desk.zoho.com/agent/*/tickets/details/*" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <umab:GmailApplicationCard ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" Account="2986622050101@ingenieria.usac.edu.gt" DisplayName="Utilizar Gmail" EmailAddress="2986622050101@ingenieria.usac.edu.gt" sap:VirtualizedContainerService.HintSize="530,701" sap2010:WorkflowViewState.IdRef="GmailApplicationCard_1" Timeout="90" UseConnectionService="False">
+      <umab:GmailApplicationCard.Body>
+        <ActivityAction x:TypeArguments="um:IMailQuickHandle">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Gmail" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="496,521" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <umab:SendMailX Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" DisplayName="Enviar correo electrónico" sap:VirtualizedContainerService.HintSize="434,410" sap2010:WorkflowViewState.IdRef="SendMailX_1" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="202003894" To="[correoAux]" UseDocumentAsBody="False">
+              <umab:SendMailX.Files>
+                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="1">
+                  <InArgument x:TypeArguments="x:String">[dirArchivo]</InArgument>
+                </scg:List>
+              </umab:SendMailX.Files>
+              <umab:SendMailX.HtmlBodyFromFile>
+                <umabh:HtmlContentArgument FilePath="{x:Null}">
+                  <umabh:HtmlContentArgument.RuntimeImages>
+                    <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                  </umabh:HtmlContentArgument.RuntimeImages>
+                  <umabh:HtmlContentArgument.ValueMappings>
+                    <scg:List x:TypeArguments="umabh:HtmlValueMappingBase" Capacity="0" />
+                  </umabh:HtmlContentArgument.ValueMappings>
+                </umabh:HtmlContentArgument>
+              </umab:SendMailX.HtmlBodyFromFile>
+            </umab:SendMailX>
+          </Sequence>
+        </ActivityAction>
+      </umab:GmailApplicationCard.Body>
+      <umab:GmailApplicationCard.ClientId>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </umab:GmailApplicationCard.ClientId>
+      <umab:GmailApplicationCard.ClientSecret>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </umab:GmailApplicationCard.ClientSecret>
+    </umab:GmailApplicationCard>
+  </Sequence>
+</Activity>

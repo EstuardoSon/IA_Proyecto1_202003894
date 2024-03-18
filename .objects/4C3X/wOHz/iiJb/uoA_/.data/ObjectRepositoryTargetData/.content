@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="04wD1k2Cmke64HqMeAEdEg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CvElementArea="746, 494, 89, 27" CvTextArea="776, 500, 29, 12" CvTextArgument="Abrir" CvType="Button" DesignTimeRectangle="747, 494, 88, 26" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Abrir' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Abrir' check:text='unchecked' /&gt;" Guid="9d2aa3e1-1a7c-4e2e-a489-07b3a76a2749" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Abrir' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="ddbd26fff7b428bc5cd77c0c576a0562.png" xmlns="">034-LU_3HW0mmH3npCaSLNQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

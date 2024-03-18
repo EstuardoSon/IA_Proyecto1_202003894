@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="rCvoOa9aEUafoDrKmH2C1A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://desk.zoho.com/agent/usacia/usac/tickets/details/965462000000341001/conversation" DesignTimeRectangle="1231, 669, 113, 29" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Cerrar Ticket'" FullSelectorArgument="&lt;webctrl aaname='Cerrar Ticket' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Cerrar Ticket' tag='BUTTON' type='button' class='zd_button_tag zd_v2-ticketclosebutton-btnTxt zd_v2-button-bold zd_v2266b1e491d zd_v2-button-primary zd_v2-button-medium zd_v2-button-container zd_v2-button-native zd_v2-button-varClass zd_v24af66c9aeb' check:innerText='Cerrar Ticket' /&gt;" Guid="c1b83868-2cab-4e3f-a3c0-e1266b87bb8f" ImageBase64="" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*usac' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="45cfcd0826c263dab6ccadc411896a38.png" xmlns="">05_3vDtSK_0GZH2KokOHysA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

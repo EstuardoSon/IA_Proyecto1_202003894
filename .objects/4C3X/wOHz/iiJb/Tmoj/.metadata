@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Guardar Respuesta",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "TmojxXZCE0ihBBha5irHWg",
+  "Reference": "6jWH5XjTdUi-jNNzcz7_Ug/TmojxXZCE0ihBBha5irHWg",
+  "ParentRef": "6jWH5XjTdUi-jNNzcz7_Ug/iiJbl-R3q0yQf8DM-TVgsQ",
+  "Created": "2024-03-16T23:16:21.0368426Z",
+  "Updated": "2024-03-16T23:16:21.0368426Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
