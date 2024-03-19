@@ -1,0 +1,11 @@
+﻿{
+  "Name": "Gmail",
+  "Type": "App",
+  "Id": "eBrFpFcOGkqL3gr96TaBpQ",
+  "Reference": "6jWH5XjTdUi-jNNzcz7_Ug/eBrFpFcOGkqL3gr96TaBpQ",
+  "Created": "2024-03-19T03:05:07.0586893Z",
+  "Updated": "2024-03-19T03:05:07.0586893Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

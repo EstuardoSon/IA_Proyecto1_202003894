@@ -1,13 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="FlujoDescarga" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <x:Members>
-    <x:Property Name="carpetaCapturas" Type="InArgument(x:String)" />
-    <x:Property Name="ubicacionDescarga" Type="InArgument(x:String)" />
-  </x:Members>
-  <VisualBasic.Settings>
-    <x:Null />
-  </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>700,1916</sap:VirtualizedContainerService.HintSize>
-  <sap2010:WorkflowViewState.IdRef>FlujoDescarga_1</sap2010:WorkflowViewState.IdRef>
+<Activity mc:Ignorable="sap sap2010" x:Class="FlujoDescarga" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1254,1596" sap2010:WorkflowViewState.IdRef="FlujoDescarga_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -112,9 +103,9 @@
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="FlujoDescarga" sap:VirtualizedContainerService.HintSize="584,1851" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="FlujoDescarga" sap:VirtualizedContainerService.HintSize="584,1531" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="nombreArchivo" />
+      <Variable x:TypeArguments="x:String" Name="ubicacionDescarga" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -122,7 +113,7 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Intentar capturar" sap:VirtualizedContainerService.HintSize="522,1740" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Intentar Descargar" sap:VirtualizedContainerService.HintSize="522,1420" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -130,13 +121,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Ticket" sap:VirtualizedContainerService.HintSize="484,1512" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="aa93e82b-6c0e-4a38-8ff4-03e1813616b6" Version="V2">
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Ingresar al Ticket" sap:VirtualizedContainerService.HintSize="484,1192" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="aa93e82b-6c0e-4a38-8ff4-03e1813616b6" Version="V2">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="450,1295" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="450,975" sap2010:WorkflowViewState.IdRef="Sequence_2">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -148,15 +139,12 @@
                     <uix:TargetAnchorable BrowserURL="https://desk.zoho.com/agent/usacia/usac/tickets/details/965462000000302232" ContentHash="kMHbj-cPZk-eB7LEfDTwAg" DesignTimeRectangle="725, 370, 210, 60" DesignTimeScaleFactor="1" FriendlyName="'Datos Archivo'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;desk&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='965462000000302299' tabindex='0' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='965462000000302299' tabindex='0' tag='DIV' class='zd_v2-attachment-attachment zd_v2-attachment-attachmentHover zd_v2-attachment-palette_transparent zd_v2-attachment-medium zd_v2bec37a2bbe zd_v2fd3b1bbb3b' aaname='' /&gt;" Guid="25712067-cacc-4b1a-a08b-cb3cbff084ac" ImageBase64="" InformativeScreenshot="00970d2261fbed2274f55232cdd63c96.png" Reference="6jWH5XjTdUi-jNNzcz7_Ug/_XcsruzUR0CrbwpUaAVQyA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='#111 - usac' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
                   </uix:NClick.Target>
                 </uix:NClick>
-                <uix:NGetText DisplayName="Obtener Nombre del Archivo" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="aa93e82b-6c0e-4a38-8ff4-03e1813616b6">
-                  <uix:NGetText.Target>
-                    <uix:TargetAnchorable CvElementArea="130, 424, 818, 26" CvType="InputBox" DesignTimeRectangle="136, 429, 791, 17" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'datasource (1).csv'" FullSelectorArgument="&lt;wnd aaname='Panel del explorador' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Nombre de archivo:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Panel del explorador' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Nombre de archivo:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="e9c1ad96-abde-42cb-9b5b-f715dec7861e" InformativeScreenshot="aa029f8698b21aef7b27dd52bf24e941.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Guardar como' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
-                  </uix:NGetText.Target>
-                  <uix:NGetText.Text>
-                    <OutArgument x:TypeArguments="x:String">[nombreArchivo]</OutArgument>
-                  </uix:NGetText.Text>
-                </uix:NGetText>
-                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir Direccion de Descarga" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="aa93e82b-6c0e-4a38-8ff4-03e1813616b6" Text="[ubicacionDescarga+nombreArchivo]" Version="V3">
+                <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="ubicacionDescarga" CacheStrategy="None" DisplayName="Obtener activo" FolderPath="2986622050101@ingenieria.usac.edu.gt's workspace" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
+                  <ui:GetRobotAsset.Value>
+                    <OutArgument x:TypeArguments="x:String">[ubicacionDescarga]</OutArgument>
+                  </ui:GetRobotAsset.Value>
+                </ui:GetRobotAsset>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir Direccion de Descarga" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="aa93e82b-6c0e-4a38-8ff4-03e1813616b6" Text="[ubicacionDescarga+&quot;202003894.xlsx&quot;]" Version="V3">
                   <uix:NTypeInto.Target>
                     <uix:TargetAnchorable CvElementArea="129, 425, 819, 25" CvType="InputBox" DesignTimeRectangle="136, 429, 791, 17" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'datasource (1).csv'" FullSelectorArgument="&lt;wnd aaname='Panel del explorador' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Nombre de archivo:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Panel del explorador' cls='DirectUIHWND' /&gt;&lt;wnd aaname='Nombre de archivo:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="2632b69e-eeae-4c80-a517-aa51a63b9157" InformativeScreenshot="64351bd1116e8a26c83c653ac85104b3.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Guardar como' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
                   </uix:NTypeInto.Target>
@@ -196,19 +184,6 @@
                     </Catch>
                   </TryCatch.Catches>
                 </TryCatch>
-                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="FlujoOrange.xaml - Invocar archivo de flujo de trabajo" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="FlujoOrange.xaml">
-                  <ui:InvokeWorkflowFile.Arguments>
-                    <InArgument x:TypeArguments="x:String" x:Key="dirArchivo">[ubicacionDescarga+nombreArchivo]</InArgument>
-                    <InArgument x:TypeArguments="x:String" x:Key="BreakTriggerScopeInArgument" />
-                    <InArgument x:TypeArguments="x:String" x:Key="carpetaCapturas">[carpetaCapturas]</InArgument>
-                  </ui:InvokeWorkflowFile.Arguments>
-                </ui:InvokeWorkflowFile>
-                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="FlujoCierreTicket.xaml - Invocar archivo de flujo de trabajo" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="FlujoCierreTicket.xaml">
-                  <ui:InvokeWorkflowFile.Arguments>
-                    <InArgument x:TypeArguments="x:String" x:Key="dirArchivo">[ubicacionDescarga+nombreArchivo]</InArgument>
-                    <InArgument x:TypeArguments="x:String" x:Key="carpetaCapturas">[carpetaCapturas]</InArgument>
-                  </ui:InvokeWorkflowFile.Arguments>
-                </ui:InvokeWorkflowFile>
               </Sequence>
             </ActivityAction>
           </uix:NApplicationCard.Body>
@@ -229,7 +204,7 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Bandeja de mensajes" sap:VirtualizedContainerService.HintSize="334,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Error al intentar descargar&quot;]">
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Bandeja de mensajes" sap:VirtualizedContainerService.HintSize="334,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[exception]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>

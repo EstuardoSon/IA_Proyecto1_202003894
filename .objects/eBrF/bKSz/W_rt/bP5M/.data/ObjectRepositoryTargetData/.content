@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="5Yegv5Yv3EuV7CyKwxgXpg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://mail.google.com/mail/u/0/#inbox?compose=new" DesignTimeRectangle="846, 298, 389, 36" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT :vc'" FullSelectorArgument="&lt;webctrl parentid=':pl' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id=':vc' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid=':pl' tag='TABLE' /&gt;&lt;webctrl id=':vc' type='text' tag='INPUT' class='agP aFw' aaname='' /&gt;" Guid="f71dc91f-2d24-467e-ba5c-5f846adce746" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='* - Gmail' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CvTextArea="808, 309, 30, 13" CvTextArgument="Para" CvType="Text" DesignTimeRectangle="809, 307, 29, 18" ElementType="Text" FriendlyName="'Para'" FullSelectorArgument="&lt;webctrl parentid=':pl' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id=':rw' tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid=':pl' tag='TABLE' /&gt;&lt;webctrl id=':rw' type='' tag='SPAN' class='gO aQY' aaname='Para' check:innerText='Para' /&gt;" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="646f06c31005b2846834498a5f3c07dc.png" xmlns="">0FSlWrXRYhkii7X9GRHLSxA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

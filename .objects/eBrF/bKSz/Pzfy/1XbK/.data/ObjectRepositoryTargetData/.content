@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="zjD_oxpMA0KfpMF93uRjjA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&amp;emr=1&amp;followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&amp;ifkv=ARZ0qKLGZfMOPVbZs_hn2d4RlpC23JWh6o_5sMK7cq4Y_qkvtRBjnVXnvCPpm6iwH-FGXVourUpY&amp;osid=1&amp;passive=1209600&amp;service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=ServiceLogin&amp;dsh=S-2063246125%3A1710817283238056&amp;theme=glif&amp;ddm=0" CvElementArea="763, 571, 113, 39" CvTextArea="787, 583, 65, 17" CvTextArgument="Siguiente" CvType="Button" DesignTimeRectangle="789, 581, 62, 20" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Siguiente'" FullSelectorArgument="&lt;webctrl parentid='identifierNext' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='identifierNext' tag='SPAN' type='' class='VfPpkd-vQzf8d' aaname='Siguiente' check:innerText='Siguiente' /&gt;" Guid="0db09de0-fc6c-42d2-b457-3be029b5a3b1" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gmail' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CvElementArea="763, 571, 113, 39" CvTextArea="787, 583, 65, 17" CvTextArgument="Siguiente" CvType="Button" DesignTimeRectangle="765, 573, 110, 36" ElementType="Button" FriendlyName="'Siguiente'" FullSelectorArgument="&lt;webctrl parentid='identifierNext' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='identifierNext' tag='BUTTON' type='button' class='VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-k8QpJ VfPpkd-LgbsSe-OWXEXe-dgl2Hf nCP5yc AjY5Oe DuMIQc LQeN7 qIypjc TrZEUc lw1w4b' aaname='Siguiente' check:innerText='Siguiente' /&gt;" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a1ce50b5bb80338f4ff835ffad5fafa5.png" xmlns="">0pdPYOdbFlk2iuNdTw54xMw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

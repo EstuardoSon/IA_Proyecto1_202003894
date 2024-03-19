@@ -1,14 +1,17 @@
 ﻿{
-  "Name": "Escribir en 'Escribir en 'INPUT login_id''",
+  "Name": "INPUT login_id'",
   "Type": "Element",
   "TaxonomyType": "Input",
   "Id": "h5E_uD0RjEaEE11hOGilFQ",
   "Reference": "6jWH5XjTdUi-jNNzcz7_Ug/h5E_uD0RjEaEE11hOGilFQ",
   "ParentRef": "6jWH5XjTdUi-jNNzcz7_Ug/6ja6Qxbl4US1qS_fPIrzEA",
   "Created": "2024-03-13T23:44:47.8913788Z",
-  "Updated": "2024-03-13T23:44:47.8913788Z",
+  "Updated": "2024-03-18T22:45:18.0686636Z",
   "CreatedBy": [
     "UiPath.UIAutomationCore, Version=23.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
     "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
   ]
 }

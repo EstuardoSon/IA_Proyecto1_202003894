@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-zTU7DBz_kaePHtj0mggYg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://mail.google.com/mail/u/0/#inbox?compose=new" CvTextArea="807, 349, 47, 13" CvTextArgument="Asunto" CvType="Text" DesignTimeRectangle="809, 346, 478, 20" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT :rq'" FullSelectorArgument="&lt;webctrl id=':qw' tag='TABLE' /&gt;&lt;webctrl id=':rq' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id=':qw' tag='TABLE' /&gt;&lt;webctrl id=':rq' type='' tag='INPUT' class='aoT' aaname='' /&gt;" Guid="e0522f94-65e7-4b73-8f6c-024bbae45a9f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Recibidos (105) - sonmux.estuardo@gmail.com - Gmail' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CvTextArea="1256, 309, 27, 13" CvTextArgument="Cco" CvType="Text" DesignTimeRectangle="1257, 304, 25, 24" ElementType="Text" FriendlyName="'Cco'" FullSelectorArgument="&lt;webctrl parentid=':pl' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id=':oy' tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid=':pl' tag='TABLE' /&gt;&lt;webctrl id=':oy' type='' tag='SPAN' class='aB  gQ pB' aaname='Cco' check:innerText='Cco' /&gt;" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c7ed714c8cf5669dbfc07287c3f18424.png" xmlns="">0-zy38EiuN0G6lyGS_iRFmw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

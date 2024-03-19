@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="LuuUTWrfDUy_yA9auddrIw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://accounts.google.com/v3/signin/challenge/pwd?TL=AEzbmxxhgw7SjIK4mEGTYb-8CDKmgIRNNJODOCoFbnpCKyyk-qYaObuq6sXqlXXY&amp;checkConnection=youtube%3A276&amp;checkedDomains=youtube&amp;cid=1&amp;continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&amp;ddm=0&amp;dsh=S-2063246125%3A1710817283238056&amp;emr=1&amp;flowEntry=ServiceLogin&amp;flowName=GlifWebSignIn&amp;followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&amp;ifkv=ARZ0qKLGZfMOPVbZs_hn2d4RlpC23JWh6o_5sMK7cq4Y_qkvtRBjnVXnvCPpm6iwH-FGXVourUpY&amp;osid=1&amp;pstMsg=1&amp;service=mail&amp;theme=glif" CvElementArea="506, 396, 370, 58" CvType="InputBox" DesignTimeRectangle="509, 399, 364, 52" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="bca7dffd-f744-4b94-be18-8007237f85b0" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gmail' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="0f58de2d8542ea9a50c7ac6f6033bdaf.png" xmlns="">0JzSmQznd70WDln386eOMvg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

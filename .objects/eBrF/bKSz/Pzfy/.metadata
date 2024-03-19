@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Chrome Gmail",
+  "Type": "Screen",
+  "TaxonomyType": "Screen",
+  "Id": "Pzfyo6TTGEK7Gjt0awKtYg",
+  "Reference": "6jWH5XjTdUi-jNNzcz7_Ug/Pzfyo6TTGEK7Gjt0awKtYg",
+  "ParentRef": "6jWH5XjTdUi-jNNzcz7_Ug/bKSz3akbFkeNwRg559lJxQ",
+  "Created": "2024-03-19T03:05:12.5304852Z",
+  "Updated": "2024-03-19T03:05:12.5304852Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

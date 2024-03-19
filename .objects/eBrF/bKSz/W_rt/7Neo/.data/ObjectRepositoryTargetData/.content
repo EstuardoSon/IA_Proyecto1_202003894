@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Q3Z2rDp1M02Yxcfg6SbTFQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://mail.google.com/mail/u/0/#inbox?compose=new" CvElementArea="806, 686, 110, 39" CvTextArea="823, 697, 45, 14" CvTextArgument="Enviar" CvType="Button" DesignTimeRectangle="809, 687, 73, 36" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Enviar'" FullSelectorArgument="&lt;webctrl id=':yw' tableRow='4' tag='TABLE' /&gt;&lt;webctrl id=':yy' tableRow='1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id=':yw' tag='TABLE' /&gt;&lt;webctrl id=':yy' type='' tag='DIV' class='T-I J-J5-Ji aoO v7 T-I-atl L3' aaname='Enviar' check:innerText='Enviar' /&gt;" Guid="948dd73a-8de2-4830-8680-5aaf2dc326b6" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Recibidos (105) - sonmux.estuardo@gmail.com - Gmail' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="a9f6fa3d9f5c6572a6ab832f946bb388.png" xmlns="">0deLzbJerkEixWMthrdaYUA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,14 +1,17 @@
 ﻿{
-  "Name": "Escribir en 'Escribir en 'INPUT password''",
+  "Name": "INPUT password",
   "Type": "Element",
   "TaxonomyType": "Password",
   "Id": "gEsWjKUc_EyJzoeTOshOBQ",
   "Reference": "6jWH5XjTdUi-jNNzcz7_Ug/gEsWjKUc_EyJzoeTOshOBQ",
   "ParentRef": "6jWH5XjTdUi-jNNzcz7_Ug/afL8Th1lNU-7C9KwmEGLuw",
   "Created": "2024-03-13T23:45:10.1120409Z",
-  "Updated": "2024-03-13T23:45:10.1120409Z",
+  "Updated": "2024-03-18T22:46:38.2405027Z",
   "CreatedBy": [
     "UiPath.UIAutomationCore, Version=23.10.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
     "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
   ]
 }

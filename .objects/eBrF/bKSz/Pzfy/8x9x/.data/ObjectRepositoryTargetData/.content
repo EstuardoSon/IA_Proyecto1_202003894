@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="RbdX5ZjFxUOV8zEwsuNB5A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&amp;emr=1&amp;followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&amp;ifkv=ARZ0qKLGZfMOPVbZs_hn2d4RlpC23JWh6o_5sMK7cq4Y_qkvtRBjnVXnvCPpm6iwH-FGXVourUpY&amp;osid=1&amp;passive=1209600&amp;service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=ServiceLogin&amp;dsh=S-2063246125%3A1710817283238056&amp;theme=glif&amp;ddm=0" CvElementArea="506, 341, 369, 59" CvType="InputBox" DesignTimeRectangle="509, 345, 364, 52" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT identifierId'" FullSelectorArgument="&lt;webctrl id='identifierId' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='identifierId' tag='INPUT' type='email' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="67acb22d-9f0b-4bc3-9bb7-5b225e9d37e3" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gmail' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="75d360a7b1a1d09b504f11cfc2c1e001.png" xmlns="">0Pe62CBBdjEChOZdecFE-og</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="O4FFN7qCSU-gccfMqhRllw" Reference="6jWH5XjTdUi-jNNzcz7_Ug/FfrzmvUa8UKE_WF4PU1Xkw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://accounts.google.com/v3/signin/challenge/pwd?TL=AEzbmxxhgw7SjIK4mEGTYb-8CDKmgIRNNJODOCoFbnpCKyyk-qYaObuq6sXqlXXY&amp;checkConnection=youtube%3A276&amp;checkedDomains=youtube&amp;cid=1&amp;continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&amp;ddm=0&amp;dsh=S-2063246125%3A1710817283238056&amp;emr=1&amp;flowEntry=ServiceLogin&amp;flowName=GlifWebSignIn&amp;followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&amp;ifkv=ARZ0qKLGZfMOPVbZs_hn2d4RlpC23JWh6o_5sMK7cq4Y_qkvtRBjnVXnvCPpm6iwH-FGXVourUpY&amp;osid=1&amp;pstMsg=1&amp;service=mail&amp;theme=glif" CvElementArea="763, 535, 113, 40" CvTextArea="787, 547, 65, 17" CvTextArgument="Siguiente" CvType="Button" DesignTimeRectangle="789, 545, 62, 20" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Siguiente'" FullSelectorArgument="&lt;webctrl parentid='passwordNext' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='passwordNext' tag='SPAN' type='' class='VfPpkd-vQzf8d' aaname='Siguiente' check:innerText='Siguiente' /&gt;" Guid="5d01023c-6d89-4fc5-bc33-84d8531117b9" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gmail' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CvElementArea="763, 535, 113, 40" CvTextArea="787, 547, 65, 17" CvTextArgument="Siguiente" CvType="Button" DesignTimeRectangle="765, 537, 110, 36" ElementType="Button" FriendlyName="'Siguiente'" FullSelectorArgument="&lt;webctrl parentid='passwordNext' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='passwordNext' tag='BUTTON' type='button' class='VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-k8QpJ VfPpkd-LgbsSe-OWXEXe-dgl2Hf nCP5yc AjY5Oe DuMIQc LQeN7 qIypjc TrZEUc lw1w4b' aaname='Siguiente' check:innerText='Siguiente' /&gt;" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="810b98eebf4590166f9977833949432a.png" xmlns="">0eTl4DKdjh06F9G-Crks2ng</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

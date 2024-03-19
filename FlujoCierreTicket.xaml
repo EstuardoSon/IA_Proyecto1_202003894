@@ -1,13 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="FlujoCierreTicket" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-  <x:Members>
-    <x:Property Name="dirArchivo" Type="InArgument(x:String)" />
-    <x:Property Name="carpetaCapturas" Type="InArgument(x:String)" />
-  </x:Members>
-  <VisualBasic.Settings>
-    <x:Null />
-  </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>700,942</sap:VirtualizedContainerService.HintSize>
-  <sap2010:WorkflowViewState.IdRef>FlujoCierreTicket_1</sap2010:WorkflowViewState.IdRef>
+<Activity mc:Ignorable="sap sap2010" x:Class="FlujoCierreTicket" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1254,3955" sap2010:WorkflowViewState.IdRef="FlujoCierreTicket_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -121,22 +112,33 @@
       <AssemblyReference>System.Collections</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="FlujoCierreTicket" sap:VirtualizedContainerService.HintSize="592,877" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="FlujoCierreTicket" sap:VirtualizedContainerService.HintSize="642,3890" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Default="1920041821223@ingenieria.usac.edu.gt" Name="correoAux" />
+      <Variable x:TypeArguments="x:String" Name="ubicacionDescarga" />
+      <Variable x:TypeArguments="x:String" Name="carpetaCapturas" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Ticket" sap:VirtualizedContainerService.HintSize="530,25" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="9970a41b-5f3d-4fc0-a0ed-78d55ee0cd1a" Version="V2">
+    <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="carpetaCapturas" CacheStrategy="None" DisplayName="Obtener activo" FolderPath="2986622050101@ingenieria.usac.edu.gt's workspace" sap:VirtualizedContainerService.HintSize="580,143" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
+      <ui:GetRobotAsset.Value>
+        <OutArgument x:TypeArguments="x:String">[carpetaCapturas]</OutArgument>
+      </ui:GetRobotAsset.Value>
+    </ui:GetRobotAsset>
+    <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="ubicacionDescarga" CacheStrategy="None" DisplayName="Obtener activo" FolderPath="2986622050101@ingenieria.usac.edu.gt's workspace" sap:VirtualizedContainerService.HintSize="580,143" sap2010:WorkflowViewState.IdRef="GetRobotAsset_2">
+      <ui:GetRobotAsset.Value>
+        <OutArgument x:TypeArguments="x:String">[ubicacionDescarga]</OutArgument>
+      </ui:GetRobotAsset.Value>
+    </ui:GetRobotAsset>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Ticket" sap:VirtualizedContainerService.HintSize="580,3413" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="9970a41b-5f3d-4fc0-a0ed-78d55ee0cd1a" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="546,3194" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="546,3196" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -173,7 +175,7 @@
                 <uix:TargetAnchorable BrowserURL="https://desk.zoho.com/agent/usacia/usac/tickets/details/965462000000341001/attachments" ContentHash="IeU3DO84wkeosMVkvSjdsw" CvElementArea="1043, 637, 136, 32" CvTextArea="1060, 646, 103, 13" CvTextArgument="Buscar Archivos" CvType="Button" DesignTimeRectangle="1045, 639, 133, 29" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Buscar archivos'" FullSelectorArgument="&lt;webctrl aaname='Buscar archivos' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Buscar archivos' tag='BUTTON' type='button' class='zd_button_tag zd_v2-button-bold zd_v2266b1e491d zd_v2-button-primaryfilled zd_v2-button-medium zd_v2-button-container zd_v2-button-native zd_v2-button-varClass zd_v24af66c9aeb' check:innerText='Buscar Archivos' /&gt;" Guid="d1231188-4410-485d-ba37-6ad4477a0672" InformativeScreenshot="f349b4565d0853d1f5729fb59e047a1c.png" Reference="6jWH5XjTdUi-jNNzcz7_Ug/uQCnVUc8wE-is-Xvio7nig" ScopeSelectorArgument="&lt;html app='chrome.exe' title='*usac' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'Escribir Archivo'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="HardwareEvents" ScopeIdentifier="9970a41b-5f3d-4fc0-a0ed-78d55ee0cd1a" Text="[dirArchivo]" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Escribir en 'Escribir Archivo'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="HardwareEvents" ScopeIdentifier="9970a41b-5f3d-4fc0-a0ed-78d55ee0cd1a" Text="[ubicacionDescarga+&quot;202003894.xlsx&quot;]" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable ContentHash="EWzsdl8BE0yLPbgoZgSf_A" CvElementArea="244, 464, 493, 26" CvType="InputBox" DesignTimeRectangle="252, 470, 463, 15" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Escribir Archivo'" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="755b83d9-fecd-4d3b-a077-ab561dbb2119" InformativeScreenshot="ebce10f659bdcb8e2413573c5e0dda67.png" Reference="6jWH5XjTdUi-jNNzcz7_Ug/InRxl1ogk0Gm7g8o9MLpFg" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Abrir' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
               </uix:NTypeInto.Target>
@@ -183,7 +185,7 @@
                 <uix:TargetAnchorable ContentHash="04wD1k2Cmke64HqMeAEdEg" CvElementArea="746, 494, 89, 27" CvTextArea="776, 500, 29, 12" CvTextArgument="Abrir" CvType="Button" DesignTimeRectangle="747, 494, 88, 26" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Cargar Archivo'" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Abrir' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Abrir' check:text='unchecked' /&gt;" Guid="9d2aa3e1-1a7c-4e2e-a489-07b3a76a2749" InformativeScreenshot="ddbd26fff7b428bc5cd77c0c576a0562.png" Reference="6jWH5XjTdUi-jNNzcz7_Ug/uoA_Z00K0kC5xmavtlZFzQ" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Abrir' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
-            <ui:ForEachFileX DisplayName="Para cada archivo en la carpeta" Filter="*.png" Folder="[carpetaCapturas]" sap:VirtualizedContainerService.HintSize="484,1184" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+            <ui:ForEachFileX DisplayName="Para cada archivo en la carpeta" Filter="*.png" Folder="[carpetaCapturas]" sap:VirtualizedContainerService.HintSize="484,1186" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
               <ui:ForEachFileX.Body>
                 <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
                   <ActivityAction.Argument1>
@@ -192,7 +194,7 @@
                   <ActivityAction.Argument2>
                     <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                   </ActivityAction.Argument2>
-                  <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="450,922" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="450,924" sap2010:WorkflowViewState.IdRef="Sequence_4">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -252,53 +254,10 @@
       </uix:NApplicationCard.TargetApp>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <umab:GmailApplicationCard ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" Account="2986622050101@ingenieria.usac.edu.gt" DisplayName="Utilizar Gmail" EmailAddress="2986622050101@ingenieria.usac.edu.gt" sap:VirtualizedContainerService.HintSize="530,701" sap2010:WorkflowViewState.IdRef="GmailApplicationCard_1" Timeout="90" UseConnectionService="False">
-      <umab:GmailApplicationCard.Body>
-        <ActivityAction x:TypeArguments="um:IMailQuickHandle">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Gmail" />
-          </ActivityAction.Argument>
-          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="496,521" sap2010:WorkflowViewState.IdRef="Sequence_5">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <umab:SendMailX Bcc="{x:Null}" Body="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" DisplayName="Enviar correo electrónico" sap:VirtualizedContainerService.HintSize="434,410" sap2010:WorkflowViewState.IdRef="SendMailX_1" Importance="Normal" IsDraft="False" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="202003894" To="[correoAux]" UseDocumentAsBody="False">
-              <umab:SendMailX.Files>
-                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="1">
-                  <InArgument x:TypeArguments="x:String">[dirArchivo]</InArgument>
-                </scg:List>
-              </umab:SendMailX.Files>
-              <umab:SendMailX.HtmlBodyFromFile>
-                <umabh:HtmlContentArgument FilePath="{x:Null}">
-                  <umabh:HtmlContentArgument.RuntimeImages>
-                    <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
-                  </umabh:HtmlContentArgument.RuntimeImages>
-                  <umabh:HtmlContentArgument.ValueMappings>
-                    <scg:List x:TypeArguments="umabh:HtmlValueMappingBase" Capacity="0" />
-                  </umabh:HtmlContentArgument.ValueMappings>
-                </umabh:HtmlContentArgument>
-              </umab:SendMailX.HtmlBodyFromFile>
-            </umab:SendMailX>
-          </Sequence>
-        </ActivityAction>
-      </umab:GmailApplicationCard.Body>
-      <umab:GmailApplicationCard.ClientId>
-        <InArgument x:TypeArguments="x:String">
-          <Literal x:TypeArguments="x:String" Value="" />
-        </InArgument>
-      </umab:GmailApplicationCard.ClientId>
-      <umab:GmailApplicationCard.ClientSecret>
-        <InArgument x:TypeArguments="x:String">
-          <Literal x:TypeArguments="x:String" Value="" />
-        </InArgument>
-      </umab:GmailApplicationCard.ClientSecret>
-    </umab:GmailApplicationCard>
   </Sequence>
 </Activity>
